@@ -79,6 +79,8 @@ def validate(questions, reviews):
             continue
         if r.get('status') not in STATES:
             errors.append(f'{qid}: 審査状態不正')
+        if type(r.get('version')) is not int or r['version'] < 1:
+            errors.append(f'{qid}: 版番号不正')
         if r.get('status') in {'verified', 'approved'}:
             claims = r.get('claims', [])
             if not claims:
@@ -86,12 +88,18 @@ def validate(questions, reviews):
             for claim in claims:
                 if not all(claim.get(k) for k in ('claim', 'source', 'locator', 'checked_on')):
                     errors.append(f'{qid}: 事実照合記録が不完全')
+                try:
+                    datetime.date.fromisoformat(claim.get('checked_on', ''))
+                except (ValueError, TypeError):
+                    errors.append(f'{qid}: 事実確認日の形式不正')
             if not r.get('uniqueness_review'):
                 errors.append(f'{qid}: 一意性審査なし')
         if r.get('status') == 'approved':
             if not r.get('reviewer') or not r.get('reviewed_on'):
                 errors.append(f'{qid}: 人の承認記録なし')
-        for field in ('reviewed_on', 'recheck_on'):
+            if r.get('time_sensitive') and not all(r.get(f) for f in ('reference_date', 'recheck_on')):
+                errors.append(f'{qid}: 時点依存の基準日・再確認日なし')
+        for field in ('reviewed_on', 'recheck_on', 'reference_date'):
             if r.get(field):
                 try:
                     datetime.date.fromisoformat(r[field])
@@ -111,7 +119,7 @@ def export_csv(questions, reviews, status, output):
     output = Path(output)
     output.parent.mkdir(parents=True, exist_ok=True)
     with output.open('w', encoding='utf-8-sig', newline='') as stream:
-        writer = csv.DictWriter(stream, fieldnames=FIELDS)
+        writer = csv.DictWriter(stream, fieldnames=FIELDS, lineterminator='\n')
         writer.writeheader()
         for q in rows:
             writer.writerow({**q, '答えjson': json.dumps(q['答えjson'], ensure_ascii=False)})

@@ -25,10 +25,29 @@ class QuizTest(unittest.TestCase):
         reviews = quiz.load(ROOT / 'data/reviews.jsonl')
         errors, _ = quiz.validate(questions, reviews)
         self.assertEqual(errors, [])
-        self.assertEqual(len(questions), 350)
+        trial = [q for q in questions if 1 <= int(q['ID'][1:]) <= 350]
+        self.assertEqual(len(trial), 350)
         for genre in quiz.GENRES:
             for level in range(1, 6):
-                self.assertEqual(sum(q['ジャンル'] == genre and q['難易度'] == level for q in questions), 10)
+                self.assertEqual(sum(q['ジャンル'] == genre and q['難易度'] == level for q in trial), 10)
+
+    def test_no_answer_given_in_question(self):
+        for q in quiz.load(ROOT / 'data/questions.jsonl'):
+            for answer in q['答えjson']:
+                # A short term may legitimately be part of another word.
+                if len(quiz.normalize(answer)) >= 3:
+                    self.assertNotIn(quiz.normalize(answer), quiz.normalize(q['問']), q['ID'])
+            self.assertFalse(any('・' in a or '･' in a for a in q['答えjson']), q['ID'])
+
+    def test_committed_csv_matches_master(self):
+        questions = quiz.load(ROOT / 'data/questions.jsonl')
+        candidate_ids = {r['ID'] for r in quiz.load(ROOT / 'data/reviews.jsonl') if r['status'] == 'candidate'}
+        with (ROOT / 'data/quiz_candidates.csv').open(encoding='utf-8-sig', newline='') as stream:
+            rows = list(csv.DictReader(stream))
+        for row in rows:
+            row['難易度'] = int(row['難易度'])
+            row['答えjson'] = json.loads(row['答えjson'])
+        self.assertEqual(rows, [q for q in questions if q['ID'] in candidate_ids])
 
     def test_approval_requires_evidence(self):
         questions = quiz.load(ROOT / 'data/questions.jsonl')[:1]

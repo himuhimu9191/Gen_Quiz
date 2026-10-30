@@ -2,6 +2,14 @@
 
 日本語の早押しクイズを、7ジャンル・5段階の難易度で約10,000問まで増やすための問題集です。
 
+**現在は350問の試作候補です。事実照合・人の最終審査は未完了で、公開承認済みは0問です。**
+
+- [全350問のCSV](data/quiz_candidates.csv)
+- [各区分から1問ずつの抜粋](docs/preview.md)
+- [問題のJSONL原本](data/questions.jsonl)
+- [審査状況のJSONL](data/reviews.jsonl)
+- [進捗と再開手順](docs/progress.md)
+
 ## 合意した仕様
 
 - ジャンル：アニメ＆ゲーム、文系、理系、生活、雑学、エンタメ＆スポーツ、社会。
@@ -32,3 +40,12 @@ python scripts/quiz.py export --status candidate --output exports/candidates.csv
 ```
 
 CSVの `答えjson` はJSON配列の文字列です。出力はUTF-8 BOM付きで、一般的な表計算ソフトでも読み込めます。
+
+```sh
+python scripts/quiz.py judge Q000259 'べーとーべん'
+# 正解
+python scripts/quiz.py export --output exports/approved.csv
+# 現時点では承認済み0問なのでヘッダーのみ
+```
+
+原本では `答えjson` は配列、CSVではJSON文字列です。例：`["ベートーヴェン", "べーとーゔぇん", "ベートーベン"]`。代表表記がかなの場合も、仕様上2番目には読みを置きます。同じ対象のかな表記をそれ以降へ重複登録しません。
