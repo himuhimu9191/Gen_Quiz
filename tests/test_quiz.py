@@ -20,6 +20,19 @@ class QuizTest(unittest.TestCase):
         for response in ['', 'べん', 'ルートヴィヒ', 'ベートーヴェンです']:
             self.assertFalse(quiz.accepts(answers, response))
 
+    def test_proper_names_require_full_names(self):
+        by_id = {q['ID']: q for q in quiz.load(ROOT / 'data/questions.jsonl')}
+        cases = [('Q000006', 'マインクラフト', 'マイクラ'),
+                 ('Q000014', 'あつまれどうぶつの森', 'あつ森'),
+                 ('Q000017', 'ドラゴンクエスト', 'ドラクエ'),
+                 ('Q000274', 'ショーシャンクの空に', 'ショーシャンク')]
+        for qid, full, shortened in cases:
+            self.assertTrue(quiz.accepts(by_id[qid]['答えjson'], full), qid)
+            self.assertFalse(quiz.accepts(by_id[qid]['答えjson'], shortened), qid)
+        for r in quiz.load(ROOT / 'data/reviews.jsonl'):
+            for alias in r.get('rejected_aliases', []):
+                self.assertFalse(quiz.accepts(by_id[r['ID']]['答えjson'], alias), r['ID'])
+
     def test_trial_balance_and_integrity(self):
         questions = quiz.load(ROOT / 'data/questions.jsonl')
         reviews = quiz.load(ROOT / 'data/reviews.jsonl')

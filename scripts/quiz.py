@@ -81,6 +81,10 @@ def validate(questions, reviews):
             errors.append(f'{qid}: 審査状態不正')
         if type(r.get('version')) is not int or r['version'] < 1:
             errors.append(f'{qid}: 版番号不正')
+        if isinstance(answers, list):
+            for alias in r.get('rejected_aliases', []):
+                if accepts(answers, alias):
+                    errors.append(f'{qid}: 不許可の略称が正解に含まれている: {alias}')
         if r.get('status') in {'verified', 'approved'}:
             claims = r.get('claims', [])
             if not claims:
