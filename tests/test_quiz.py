@@ -3,6 +3,7 @@ import copy
 import importlib.util
 import json
 from pathlib import Path
+import re
 import tempfile
 import unittest
 
@@ -49,7 +50,13 @@ class QuizTest(unittest.TestCase):
             for answer in q['答えjson']:
                 # A short term may legitimately be part of another word.
                 if len(quiz.normalize(answer)) >= 3:
-                    self.assertNotIn(quiz.normalize(answer), quiz.normalize(q['問']), q['ID'])
+                    question = q['問']
+                    # Treat katakana words as units: ラクトース is not given
+                    # merely because the separate word ガラクトース occurs.
+                    for token in re.findall(r'[ァ-ヺー]+', question):
+                        if quiz.normalize(answer) != quiz.normalize(token) and quiz.normalize(answer) in quiz.normalize(token):
+                            question = question.replace(token, '')
+                    self.assertNotIn(quiz.normalize(answer), quiz.normalize(question), q['ID'])
             self.assertFalse(any('・' in a or '･' in a for a in q['答えjson']), q['ID'])
 
     def test_committed_csv_matches_master(self):

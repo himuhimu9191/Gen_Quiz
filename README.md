@@ -41,7 +41,8 @@ Python 3.12以上、標準ライブラリのみを使います。追加のAPIキ
 cd /workspace/Gen_Quiz
 python -m unittest discover -s tests -v
 python scripts/quiz.py validate
-python scripts/quiz.py export --status candidate --output exports/candidates.csv
+python scripts/quiz.py export --status all --output exports/all.csv
+python scripts/quiz.py export --status verified --output exports/verified.csv
 ```
 
 CSVの `答えjson` はJSON配列の文字列です。出力はUTF-8 BOM付きで、一般的な表計算ソフトでも読み込めます。
@@ -54,3 +55,5 @@ python scripts/quiz.py export --output exports/approved.csv
 ```
 
 原本では `答えjson` は配列、CSVではJSON文字列です。例：`["ベートーヴェン", "べーとーゔぇん", "ベートーベン"]`。代表表記がかなの場合も、仕様上2番目には読みを置きます。同じ対象のかな表記をそれ以降へ重複登録しません。
+
+出典の取得版を確認し直す場合は `python scripts/check_sources.py --workers 4` を実行します。固定コミットからの再取得とSHA-256一致を調べるだけで、問題の事実照合や公開承認は行いません。
