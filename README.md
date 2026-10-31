@@ -2,9 +2,13 @@
 
 日本語の早押しクイズを、7ジャンル・5段階の難易度で約10,000問まで増やすための問題集です。
 
-**現在は350問の試作候補です。事実照合・人の最終審査は未完了で、公開承認済みは0問です。**
+**現在385問。出典照合済み79問、照合未完了306問、公開承認済み0問です。難易度は暫定です。**
 
-- [全350問のCSV](data/quiz_candidates.csv)
+- [全385問のCSV](data/quiz_all.csv)
+- [照合済み79問のCSV](data/quiz_verified.csv)
+- [照合未完了306問のCSV](data/quiz_candidates.csv)
+- [追加35問の問題と出典](docs/batch-002.md)
+- [出典照合の記録](docs/source-review.md)
 - [各区分から1問ずつの抜粋](docs/preview.md)
 - [問題のJSONL原本](data/questions.jsonl)
 - [審査状況のJSONL](data/reviews.jsonl)

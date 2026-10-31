@@ -76,12 +76,44 @@ class QuizTest(unittest.TestCase):
         with tempfile.TemporaryDirectory() as directory:
             target = Path(directory) / 'quiz.csv'
             self.assertEqual(quiz.export_csv(questions, reviews, 'approved', target), 0)
-            self.assertEqual(quiz.export_csv(questions, reviews, 'candidate', target), 350)
+            candidate_ids = {r['ID'] for r in reviews if r['status'] == 'candidate'}
+            candidates = [q for q in questions if q['ID'] in candidate_ids]
+            self.assertEqual(quiz.export_csv(questions, reviews, 'candidate', target), len(candidates))
             with target.open(encoding='utf-8-sig', newline='') as stream:
                 rows = list(csv.DictReader(stream))
             self.assertEqual(list(rows[0]), list(quiz.FIELDS))
-            self.assertEqual(json.loads(rows[0]['答えjson']), questions[0]['答えjson'])
-            self.assertEqual(rows[0]['問'], questions[0]['問'])
+            self.assertEqual(json.loads(rows[0]['答えjson']), candidates[0]['答えjson'])
+            self.assertEqual(rows[0]['問'], candidates[0]['問'])
+            self.assertEqual(quiz.export_csv(questions, reviews, 'all', target), len(questions))
+
+    def test_verified_claims_have_traceable_sources(self):
+        sources = quiz.load(ROOT / 'data/sources.jsonl')
+        by_url = {s['url']: s for s in sources}
+        self.assertEqual(len(by_url), len(sources))
+        verified = [r for r in quiz.load(ROOT / 'data/reviews.jsonl') if r['status'] == 'verified']
+        self.assertGreater(len(verified), 0)
+        for review in verified:
+            self.assertIsNone(review['reviewer'])
+            self.assertIsNone(review['reviewed_on'])
+            for claim in review['claims']:
+                self.assertIn(claim['source'], by_url, review['ID'])
+                source = by_url[claim['source']]
+                self.assertRegex(source['sha256'], r'^[a-f0-9]{64}$')
+                self.assertRegex(source['repository_commit'], r'^[a-f0-9]{40}$')
+                self.assertIn(source['repository_commit'], source['url'])
+
+    def test_all_and_verified_csv_match_master(self):
+        questions = quiz.load(ROOT / 'data/questions.jsonl')
+        reviews = quiz.load(ROOT / 'data/reviews.jsonl')
+        by_id = {r['ID']: r for r in reviews}
+        for status in ('all', 'verified'):
+            with (ROOT / f'data/quiz_{status}.csv').open(encoding='utf-8-sig', newline='') as stream:
+                rows = list(csv.DictReader(stream))
+            for row in rows:
+                row['難易度'] = int(row['難易度'])
+                row['答えjson'] = json.loads(row['答えjson'])
+            expected = [q for q in questions if status == 'all' or by_id[q['ID']]['status'] == status]
+            self.assertEqual(rows, expected)
 
 
 if __name__ == '__main__':

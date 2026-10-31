@@ -118,7 +118,7 @@ def export_csv(questions, reviews, status, output):
     errors, _ = validate(questions, reviews)
     if errors:
         raise ValueError('\n'.join(errors))
-    allowed = {r['ID'] for r in reviews if r['status'] == status}
+    allowed = {r['ID'] for r in reviews if status == 'all' or r['status'] == status}
     rows = [q for q in questions if q['ID'] in allowed]
     output = Path(output)
     output.parent.mkdir(parents=True, exist_ok=True)
@@ -135,7 +135,7 @@ def main():
     sub = parser.add_subparsers(dest='command', required=True)
     sub.add_parser('validate')
     exp = sub.add_parser('export')
-    exp.add_argument('--status', choices=sorted(STATES), default='approved')
+    exp.add_argument('--status', choices=sorted(STATES | {'all'}), default='approved')
     exp.add_argument('--output', required=True)
     judge = sub.add_parser('judge')
     judge.add_argument('id')
