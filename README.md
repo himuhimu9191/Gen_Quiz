@@ -2,11 +2,11 @@
 
 日本語の早押しクイズを、7ジャンル・5段階の難易度で約10,000問まで増やすための問題集です。
 
-**現在385問。出典照合済み79問、照合未完了306問、公開承認済み0問です。難易度は暫定です。**
+**現在385問。出典照合済み80問、照合未完了305問、公開承認済み0問です。難易度は暫定です。**
 
 - [全385問のCSV](data/quiz_all.csv)
-- [照合済み79問のCSV](data/quiz_verified.csv)
-- [照合未完了306問のCSV](data/quiz_candidates.csv)
+- [照合済み80問のCSV](data/quiz_verified.csv)
+- [照合未完了305問のCSV](data/quiz_candidates.csv)
 - [追加35問の問題と出典](docs/batch-002.md)
 - [出典照合の記録](docs/source-review.md)
 - [各区分から1問ずつの抜粋](docs/preview.md)
@@ -56,4 +56,4 @@ python scripts/quiz.py export --output exports/approved.csv
 
 原本では `答えjson` は配列、CSVではJSON文字列です。例：`["ベートーヴェン", "べーとーゔぇん", "ベートーベン"]`。代表表記がかなの場合も、仕様上2番目には読みを置きます。同じ対象のかな表記をそれ以降へ重複登録しません。
 
-出典の取得版を確認し直す場合は `python scripts/check_sources.py --workers 4` を実行します。固定コミットからの再取得とSHA-256一致を調べるだけで、問題の事実照合や公開承認は行いません。
+出典の取得版を確認し直す場合は `python scripts/check_sources.py --workers 4` を実行します。Git固定版と公式Web資料の再取得・保存済みSHA-256との一致を調べるだけで、問題の事実照合や公開承認は行いません。

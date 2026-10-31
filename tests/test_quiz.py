@@ -106,8 +106,13 @@ class QuizTest(unittest.TestCase):
                 self.assertIn(claim['source'], by_url, review['ID'])
                 source = by_url[claim['source']]
                 self.assertRegex(source['sha256'], r'^[a-f0-9]{64}$')
-                self.assertRegex(source['repository_commit'], r'^[a-f0-9]{40}$')
-                self.assertIn(source['repository_commit'], source['url'])
+                if source.get('source_type') == 'web':
+                    self.assertTrue(source['url'].startswith('https://'))
+                    self.assertRegex(source['checked_on'], r'^\d{4}-\d{2}-\d{2}$')
+                    self.assertTrue(source['read_sections'])
+                else:
+                    self.assertRegex(source['repository_commit'], r'^[a-f0-9]{40}$')
+                    self.assertIn(source['repository_commit'], source['url'])
 
     def test_all_and_verified_csv_match_master(self):
         questions = quiz.load(ROOT / 'data/questions.jsonl')
