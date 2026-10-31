@@ -73,6 +73,9 @@ class QuizTest(unittest.TestCase):
         questions = quiz.load(ROOT / 'data/questions.jsonl')[:1]
         reviews = copy.deepcopy(quiz.load(ROOT / 'data/reviews.jsonl')[:1])
         reviews[0]['status'] = 'approved'
+        reviews[0]['claims'] = []
+        reviews[0]['reviewer'] = None
+        reviews[0]['reviewed_on'] = None
         errors, _ = quiz.validate(questions, reviews)
         self.assertTrue(any('根拠なし' in e for e in errors))
         self.assertTrue(any('人の承認記録なし' in e for e in errors))
@@ -87,10 +90,13 @@ class QuizTest(unittest.TestCase):
             candidates = [q for q in questions if q['ID'] in candidate_ids]
             self.assertEqual(quiz.export_csv(questions, reviews, 'candidate', target), len(candidates))
             with target.open(encoding='utf-8-sig', newline='') as stream:
-                rows = list(csv.DictReader(stream))
-            self.assertEqual(list(rows[0]), list(quiz.FIELDS))
-            self.assertEqual(json.loads(rows[0]['答えjson']), candidates[0]['答えjson'])
-            self.assertEqual(rows[0]['問'], candidates[0]['問'])
+                reader = csv.DictReader(stream)
+                self.assertEqual(reader.fieldnames, list(quiz.FIELDS))
+                rows = list(reader)
+            self.assertEqual(len(rows), len(candidates))
+            if candidates:
+                self.assertEqual(json.loads(rows[0]['答えjson']), candidates[0]['答えjson'])
+                self.assertEqual(rows[0]['問'], candidates[0]['問'])
             self.assertEqual(quiz.export_csv(questions, reviews, 'all', target), len(questions))
 
     def test_verified_claims_have_traceable_sources(self):
