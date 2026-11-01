@@ -1,0 +1,35 @@
+{
+  "batch": "005",
+  "created_on": "2026-11-01",
+  "ids": {
+    "first": "Q000433",
+    "last": "Q003500"
+  },
+  "added": 3068,
+  "total": 3500,
+  "statuses": {
+    "verified": 420,
+    "candidate": 3080
+  },
+  "source_id_prefixes": {
+    "QA20CAPR": 1730,
+    "QA20QBIK": 1338
+  },
+  "explanation_methods": {
+    "wikipedia_lead": 246,
+    "question_to_declarative": 2822
+  },
+  "source_url": "https://jaqket.s3.ap-northeast-1.amazonaws.com/data/aio_02/aio_02_train.jsonl",
+  "source_sha256": "7c8cdcf3cdc3548ed2c91c4caf155d192221eb7e49b08a55a0bc7e1f5d935b45",
+  "baseline_commit": "c433b3e87d1fed98064ea6a73cf7fcb13a1753fa",
+  "baseline_questions_sha256": "07ff58bca85b45065e92d771e9de77006b5500140e8b469256d1194b05713b15",
+  "question_master_sha256": "a1fa569e7eeed87cf07b4b35f90ff6216d3e01d59bf8fb5ee92124dadda624c7",
+  "checks": {
+    "existing_432_questions_preserved": true,
+    "existing_432_reviews_preserved": true,
+    "restricted_ABC_GO_EQDN_items_imported": 0,
+    "unit_tests_passed": 9,
+    "structural_errors": 0,
+    "question_length_warnings": 5
+  }
+}
