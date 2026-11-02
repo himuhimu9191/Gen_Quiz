@@ -1,0 +1,49 @@
+{
+  "checked_on": "2026-11-03",
+  "batch": "040",
+  "method": "JGLUE fixed-commit exact alignment + Pykakasi 2.3.0 reading conversion",
+  "reviewed": 2238,
+  "newly_verified": 2238,
+  "held_duplicates": 0,
+  "changes": [],
+  "skipped": [
+    "Q004829",
+    "Q005165",
+    "Q005412",
+    "Q005480",
+    "Q005709",
+    "Q006128",
+    "Q006398",
+    "Q006647",
+    "Q006729",
+    "Q006904"
+  ],
+  "statuses": {
+    "verified": 3267,
+    "candidate": 3698,
+    "held": 35
+  },
+  "warnings": 1163,
+  "sample_ids": [
+    "Q004670",
+    "Q004671",
+    "Q004672",
+    "Q004673",
+    "Q004674",
+    "Q004675",
+    "Q004676",
+    "Q004677",
+    "Q004678",
+    "Q004679",
+    "Q004680",
+    "Q004681",
+    "Q004682",
+    "Q004683",
+    "Q004684",
+    "Q004685",
+    "Q004686",
+    "Q004687",
+    "Q004688",
+    "Q004689"
+  ]
+}
