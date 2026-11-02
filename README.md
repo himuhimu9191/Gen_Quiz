@@ -2,21 +2,22 @@
 
 日本語の早押しクイズを、7ジャンル・5段階の難易度で整備する問題集です。
 
-**現在3,508問。出典照合済み609問、未照合候補2,899問、公開承認済み0問です。追加分の難易度は試遊前の暫定評価です。**
+**現在3,508問。出典照合済み610問、未照合候補2,898問、公開承認済み0問です。追加分の難易度は試遊前の暫定評価です。**
 
-[11月3日の照合記録](docs/review-2026-11-03.md)：8問を追加し、既存4問も公式資料で再照合して分類・問題文を更新しました。全問の事実照合は継続中です。[11月2日の照合記録](docs/review-2026-11-02.md)も保持しています。
+[11月3日の照合記録](docs/review-2026-11-03.md)：8問を追加し、既存5問も公式資料で再照合して分類・問題文を更新しました。全問の事実照合は継続中です。[11月2日の照合記録](docs/review-2026-11-02.md)も保持しています。
 
 追加3,068問は、CC BY-SA 4.0の公開問題を編集した未照合候補です。[出典・利用条件](docs/import-licenses.md)を確認してください。
 
 - [全3,508問のCSV](data/quiz_all.csv)
-- [照合済み609問のCSV](data/quiz_verified.csv)
-- [未照合候補2,899問のCSV](data/quiz_candidates.csv)
+- [照合済み610問のCSV](data/quiz_verified.csv)
+- [未照合候補2,898問のCSV](data/quiz_candidates.csv)
 - [バッチ003の35問（照合済み）](docs/batch-003.md)
 - [35,000問への制作計画](docs/production-plan.md)
 - [追加35問の問題と出典](docs/batch-002.md)
 - [出典照合の記録](docs/source-review.md)
 - [バッチ006の8問（照合済み）](docs/batch-006.md)
 - [バッチ007の既存問題4問の再照合](docs/batch-007.md)
+- [バッチ008の既存問題1問の再照合](docs/batch-008.md)
 - [各区分から1問ずつの抜粋](docs/preview.md)
 - [問題のJSONL原本](data/questions.jsonl)
 - [審査状況のJSONL](data/reviews.jsonl)
