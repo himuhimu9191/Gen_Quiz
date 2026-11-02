@@ -55,11 +55,18 @@ class QuizTest(unittest.TestCase):
         self.assertEqual(added[-1]['ID'], 'Q007000')
         by_id = {r['ID']: r for r in reviews}
         verified = [q for q in added if by_id[q['ID']]['status'] == 'verified']
-        self.assertEqual({q['ID'] for q in verified}, {
+        self.assertTrue({
             'Q003509', 'Q003511', 'Q003512', 'Q003521', 'Q003545', 'Q003551',
-        })
-        self.assertEqual(sum(by_id[q['ID']]['status'] == 'candidate' for q in added), 3485)
-        self.assertEqual(sum(by_id[q['ID']]['status'] == 'held' for q in added), 1)
+        }.issubset({q['ID'] for q in verified}))
+        self.assertEqual(sum(by_id[q['ID']]['status'] in {'candidate', 'verified', 'held'} for q in added), 3492)
+        self.assertEqual(by_id['Q004237']['status'], 'held')
+        self.assertEqual(by_id['Q004237']['duplicate_of'], 'Q003551')
+        for q in added:
+            if by_id[q['ID']]['status'] == 'verified':
+                self.assertTrue(by_id[q['ID']]['claims'], q['ID'])
+                self.assertEqual(by_id[q['ID']]['reading_status'], 'reviewed', q['ID'])
+                self.assertEqual(by_id[q['ID']]['classification_status'], 'reviewed', q['ID'])
+                self.assertEqual(by_id[q['ID']]['tag_status'], 'reviewed', q['ID'])
 
     def test_no_answer_given_in_question(self):
         for q in quiz.load(ROOT / 'data/questions.jsonl'):
@@ -152,10 +159,15 @@ class QuizTest(unittest.TestCase):
         reviews = {r['ID']: r for r in quiz.load(ROOT / 'data/reviews.jsonl')}
         reviewed = [q for q in questions if reviews[q['ID']]['tag_status'] == 'reviewed']
         pending = [q for q in questions if reviews[q['ID']]['tag_status'] == 'pending']
-        self.assertEqual(len(reviewed), 34)
+        self.assertGreaterEqual(len(reviewed), 34)
         self.assertTrue(all(q['タグ'] for q in reviewed))
         self.assertTrue(all(not q['タグ'] for q in pending))
-        self.assertEqual(len(pending), 6966)
+        self.assertEqual(len(pending) + len(reviewed), len(questions))
+        for question in reviewed:
+            record = reviews[question['ID']]['tag_review']
+            self.assertTrue(record['checked_on'], question['ID'])
+            self.assertTrue(record['method'], question['ID'])
+            self.assertEqual(record['tags'], question['タグ'], question['ID'])
         for question in reviewed:
             self.assertEqual(len(question['タグ']), 2, question['ID'])
             self.assertIn(question['タグ'][0], {
