@@ -229,8 +229,9 @@ def dictionary(word):
 def claim(text, source, coverage):
     return {'claim': text, 'source': source['url'], 'locator': source['section'], 'checked_on': TODAY, 'coverage': coverage}
 
-def run(batch_number, decisions, held, supplements=None):
+def run(batch_number, decisions, held, supplements=None, headwords=None):
     supplements = supplements or {}
+    headwords = headwords or {}
     questions = quiz.load(ROOT / 'data/questions.jsonl')
     reviews = quiz.load(ROOT / 'data/reviews.jsonl')
     sources = quiz.load(ROOT / 'data/sources.jsonl')
@@ -245,7 +246,7 @@ def run(batch_number, decisions, held, supplements=None):
         qid = f'Q{number:06}'
         q, r = qb[qid], rb[qid]
         before, old_review = copy.deepcopy(q), copy.deepcopy(r)
-        ds = dictionary(answers[0])
+        ds = dictionary(headwords.get(number, answers[0]))
         selected = [ds]
         if key:
             p = primary[key]
