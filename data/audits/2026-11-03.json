@@ -8,8 +8,8 @@
     "approved": 0
   },
   "statuses": {
-    "verified": 615,
-    "candidate": 2893,
+    "verified": 617,
+    "candidate": 2891,
     "approved": 0
   },
   "reviewed_existing": [
@@ -23,7 +23,9 @@
     {"ID": "Q000535", "version": 2, "status": "verified", "genre": "理系", "subgenre": "動物", "difficulty": 2, "answer": "チーター", "sources": ["https://nationalzoo.si.edu/animals/cheetah"]},
     {"ID": "Q000496", "version": 2, "status": "verified", "genre": "生活", "subgenre": "食品", "difficulty": 2, "answer": "マーガリン", "sources": ["https://j-margarine.com/kiso/what/"]},
     {"ID": "Q000498", "version": 2, "status": "verified", "genre": "理系", "subgenre": "化学", "difficulty": 3, "answer": "フェノールフタレイン", "sources": ["https://openstax.org/books/chemistry-2e/pages/14-7-acid-base-titrations"]},
-    {"ID": "Q000505", "version": 3, "status": "verified", "genre": "生活", "subgenre": "料理", "difficulty": 2, "answer": "ひつまぶし", "sources": ["https://www.nagoya-info.jp/gourmet/detail/151/"]}
+    {"ID": "Q000505", "version": 3, "status": "verified", "genre": "生活", "subgenre": "料理", "difficulty": 2, "answer": "ひつまぶし", "sources": ["https://www.nagoya-info.jp/gourmet/detail/151/"]},
+    {"ID": "Q000526", "version": 2, "status": "verified", "genre": "エンタメ＆スポーツ", "subgenre": "テレビ", "difficulty": 2, "answer": "ピタゴラスイッチ", "sources": ["https://www.web.nhk/tv/an/pitagora/pl/series-tep-ZZR21863JJ"]},
+    {"ID": "Q000532", "version": 2, "status": "verified", "genre": "生活", "subgenre": "文具", "difficulty": 2, "answer": "MONO", "sources": ["https://www.tombow.com/products_brand/mono/mono-eraser/"]}
   ],
   "additions": [
     {"ID": "Q003501", "genre": "アニメ＆ゲーム", "subgenre": "ゲーム", "difficulty": 1, "answer": "ヨッシー", "reading": "よっしー", "source": "https://www.nintendo.com/jp/character/mario/characters/data/characters.xml"},
@@ -35,5 +37,5 @@
     {"ID": "Q003507", "genre": "社会", "subgenre": "法律", "difficulty": 2, "answer": "最高裁判所", "reading": "さいこうさいばんしょ", "source": "https://www.ndl.go.jp/constitution/etc/j01.html"},
     {"ID": "Q003508", "genre": "雑学", "subgenre": "郵便", "difficulty": 1, "answer": "郵便番号", "reading": "ゆうびんばんごう", "source": "https://www.post.japanpost.jp/service/search/zipcode/"}
   ],
-  "verification_scope": "Each listed source's content was read and matched to the question, explanation, answer, reading and classification. Q000435, Q000487, Q000490, Q000480, Q000466, Q000464, Q000522 and Q000535 are existing questions updated and moved from candidate to verified after direct source review. Difficulty remains provisional pending playtesting. Public approval remains a separate human review."
+  "verification_scope": "Each listed source's content was read and matched to the question, explanation, answer, reading and classification. Q000435, Q000487, Q000490, Q000480, Q000466, Q000464, Q000522, Q000535, Q000496, Q000498, Q000505, Q000526 and Q000532 are existing questions updated and moved from candidate to verified after direct source review. Difficulty remains provisional pending playtesting. Public approval remains a separate human review."
 }
