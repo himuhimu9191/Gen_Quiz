@@ -1,15 +1,15 @@
 {
   "date": "2026-11-03",
   "baseline_total": 3500,
-  "total": 3508,
+  "total": 7000,
   "baseline_statuses": {
     "verified": 597,
     "candidate": 2903,
     "approved": 0
   },
   "statuses": {
-    "verified": 618,
-    "candidate": 2890,
+    "verified": 624,
+    "candidate": 6376,
     "approved": 0
   },
   "reviewed_existing": [
@@ -29,7 +29,10 @@
     {"ID": "Q000508", "version": 3, "status": "verified", "genre": "理系", "subgenre": "医学", "difficulty": 2, "answer": "骨粗鬆症", "sources": ["https://www.jpof.or.jp/osteoporosis/tabid249.html"]},
     {"ID": "Q000511", "version": 3, "status": "verified", "genre": "社会", "subgenre": "司法", "difficulty": 2, "answer": "家庭裁判所", "sources": ["https://www.courts.go.jp/saiban/syurui/syurui_kazi/index.html", "https://www.courts.go.jp/saiban/syurui/syurui_syonen/index.html"]},
     {"ID": "Q000556", "version": 2, "status": "verified", "genre": "理系", "subgenre": "天文学", "difficulty": 3, "answer": "コロナ", "sources": ["https://science.nasa.gov/sun/facts/"]},
-    {"ID": "Q000570", "version": 3, "status": "verified", "genre": "理系", "subgenre": "分子生物学", "difficulty": 3, "answer": "翻訳", "sources": ["https://kotobank.jp/word/%E7%BF%BB%E8%A8%B3-135307", "https://openstax.org/books/biology-2e/pages/15-5-ribosomes-and-protein-synthesis"]}
+    {"ID": "Q000570", "version": 3, "status": "verified", "genre": "理系", "subgenre": "分子生物学", "difficulty": 3, "answer": "翻訳", "sources": ["https://kotobank.jp/word/%E7%BF%BB%E8%A8%B3-135307", "https://openstax.org/books/biology-2e/pages/15-5-ribosomes-and-protein-synthesis"]},
+    {"ID": "Q000536", "version": 2, "status": "verified", "genre": "理系", "subgenre": "工学史", "difficulty": 2, "answer": "ギュスターヴエッフェル", "sources": ["https://www.nps.gov/stli/learn/historyculture/alexandre-gustave-eiffel.htm"]},
+    {"ID": "Q000538", "version": 3, "status": "verified", "genre": "社会", "subgenre": "世界地理", "difficulty": 2, "answer": "シンガポール", "sources": ["https://www.visitsingapore.com/neighbourhood/featured-neighbourhood/marina-bay/merlion-park/"]},
+    {"ID": "Q000547", "version": 2, "status": "verified", "genre": "社会", "subgenre": "鉄道", "difficulty": 3, "answer": "新函館北斗駅", "sources": ["https://www.jrhokkaido.co.jp/press/2015/151218-2.pdf"]}
   ],
   "additions": [
     {"ID": "Q003501", "genre": "アニメ＆ゲーム", "subgenre": "ゲーム", "difficulty": 1, "answer": "ヨッシー", "reading": "よっしー", "source": "https://www.nintendo.com/jp/character/mario/characters/data/characters.xml"},
@@ -43,10 +46,37 @@
   ],
   "tagging": {
     "schema_version": 1,
-    "reviewed": 25,
-    "pending": 3483,
+    "reviewed": 31,
+    "pending": 6969,
     "record": "docs/tags-2026-11-03.md",
     "policy": "Assign two content-specific tags only after reading the item; leave all other tags empty and pending."
   },
-  "verification_scope": "Each listed source's content was read and matched to the question, explanation, answer, reading and classification. Q000435, Q000487, Q000490, Q000480, Q000466, Q000464, Q000522, Q000535, Q000496, Q000498, Q000526, Q000532 and Q000556 were existing candidates updated and moved to verified after direct source review. Q000505, Q000508, Q000511 and Q000570 were already verified and were re-reviewed against additional authoritative sources. Difficulty remains provisional pending playtesting. Public approval remains a separate human review."
+  "batch_015": {
+    "reviewed_existing": ["Q000536", "Q000538", "Q000547"],
+    "added": 0,
+    "statuses": {"verified": 621, "candidate": 2887, "approved": 0},
+    "tagged": 3,
+    "record": "docs/batch-015.md"
+  },
+  "batch_016": {
+    "ids": {"first": "Q003509", "last": "Q007000"},
+    "added": 3492,
+    "source_counts": {"aio": 1036, "jqac": 125, "jsquad": 2331},
+    "statuses": {"verified": 0, "candidate": 3492, "approved": 0},
+    "tag_statuses": {"reviewed": 0, "pending": 3492},
+    "difficulty_distribution": {"1": 11, "2": 15, "3": 3399, "4": 46, "5": 21},
+    "record": "docs/batch-016.md",
+    "manifest": "data/imports/batch-016-manifest.json",
+    "pending": ["fact and question fit", "hiragana reading", "answer uniqueness and notation variants", "genre and subgenre", "difficulty calibration and playtesting", "tags", "human approval"]
+  },
+  "batch_017": {
+    "reviewed_existing": ["Q003509", "Q003511", "Q003512"],
+    "added": 0,
+    "statuses": {"verified": 624, "candidate": 6376, "approved": 0},
+    "tagged": 3,
+    "record": "docs/batch-017.md"
+  },
+  "validation": {"unit_tests": 11, "structural_errors": 0, "warnings": 1157, "warning_breakdown": {"long_prompts": 5, "shared_answer_target": 1152}},
+  "source_recheck": {"checked": 705, "hash_matches": 184, "hash_mismatches_or_unavailable": 521, "batch_016_dataset_sources_checked": 3, "batch_016_dataset_hash_matches": 3, "note": "Most older mutable web pages no longer reproduce the saved retrieval bytes. A hash mismatch is a source snapshot reproducibility issue, not by itself evidence that the verified claim is false."},
+  "verification_scope": "For the listed verified records, each cited source was read and matched to the question, explanation, answer, reading and classification. Q000435, Q000487, Q000490, Q000480, Q000466, Q000464, Q000522, Q000535, Q000496, Q000498, Q000526, Q000532 and Q000556 were existing candidates updated and moved to verified after direct source review. Q000505, Q000508, Q000511 and Q000570 were already verified and were re-reviewed against additional authoritative sources. Q000536, Q000538 and Q000547 were checked against the official sources recorded for batch 015. Q003509, Q003511 and Q003512 were checked against Tokyo Metropolitan Government, AAOS, and University of Tokyo sources in batch 017. Of batch 016's 3,492 additions, these three have been checked question by question; the remainder are candidates. Difficulty remains provisional pending playtesting. Public approval remains a separate human review."
 }

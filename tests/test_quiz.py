@@ -45,6 +45,19 @@ class QuizTest(unittest.TestCase):
             for level in range(1, 6):
                 self.assertEqual(sum(q['ジャンル'] == genre and q['難易度'] == level for q in trial), 10)
 
+    def test_batch_016_target_and_statuses(self):
+        questions = quiz.load(ROOT / 'data/questions.jsonl')
+        reviews = quiz.load(ROOT / 'data/reviews.jsonl')
+        self.assertEqual(len(questions), 7000)
+        added = [q for q in questions if q['ID'] >= 'Q003509']
+        self.assertEqual(len(added), 3492)
+        self.assertEqual(added[0]['ID'], 'Q003509')
+        self.assertEqual(added[-1]['ID'], 'Q007000')
+        by_id = {r['ID']: r for r in reviews}
+        verified = [q for q in added if by_id[q['ID']]['status'] == 'verified']
+        self.assertEqual({q['ID'] for q in verified}, {'Q003509', 'Q003511', 'Q003512'})
+        self.assertEqual(sum(by_id[q['ID']]['status'] == 'candidate' for q in added), 3489)
+
     def test_no_answer_given_in_question(self):
         for q in quiz.load(ROOT / 'data/questions.jsonl'):
             for answer in q['答えjson']:
@@ -126,10 +139,10 @@ class QuizTest(unittest.TestCase):
         reviews = {r['ID']: r for r in quiz.load(ROOT / 'data/reviews.jsonl')}
         reviewed = [q for q in questions if reviews[q['ID']]['tag_status'] == 'reviewed']
         pending = [q for q in questions if reviews[q['ID']]['tag_status'] == 'pending']
-        self.assertEqual(len(reviewed), 25)
+        self.assertEqual(len(reviewed), 31)
         self.assertTrue(all(q['タグ'] for q in reviewed))
         self.assertTrue(all(not q['タグ'] for q in pending))
-        self.assertEqual(len(pending), 3483)
+        self.assertEqual(len(pending), 6969)
         for question in reviewed:
             self.assertEqual(len(question['タグ']), 2, question['ID'])
             self.assertIn(question['タグ'][0], {

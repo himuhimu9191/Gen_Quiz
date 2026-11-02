@@ -8,23 +8,39 @@ from urllib.parse import urlsplit
 from urllib.request import Request, urlopen
 
 
-def raw_url(url):
+def raw_url(url, suffix=None):
     parts = urlsplit(url)
     if parts.scheme != 'https':
         raise ValueError('HTTPSの出典が必要です')
     if parts.hostname == 'github.com':
         owner, repo, blob, commit, *path = parts.path.strip('/').split('/')
-        if blob != 'blob':
-            raise ValueError('固定版のファイルURLが必要です')
+        if blob not in {'blob', 'tree'}:
+            raise ValueError('固定版のファイルまたはディレクトリURLが必要です')
+        if suffix:
+            path.extend(suffix)
         return f'https://raw.githubusercontent.com/{owner}/{repo}/{commit}/' + '/'.join(path)
     return url
 
 
+def fetch(url):
+    request = Request(url, headers={'User-Agent': 'GenQuizSourceCheck/1.0'})
+    with urlopen(request, timeout=30) as response:
+        return response.read()
+
+
 def check(source):
     try:
-        request = Request(raw_url(source['url']), headers={'User-Agent': 'GenQuizSourceCheck/1.0'})
-        with urlopen(request, timeout=30) as response:
-            data = response.read()
+        files = source.get('dataset_file_sha256')
+        if files:
+            contents = []
+            for name, expected in files.items():
+                data = fetch(raw_url(source['url'], name.split('/')))
+                if hashlib.sha256(data).hexdigest() != expected:
+                    return source['url'], f'{name}: 保存したSHA-256と不一致'
+                contents.append(data)
+            data = b''.join(contents)
+        else:
+            data = fetch(raw_url(source['url']))
         digest = hashlib.sha256(data).hexdigest()
         if digest != source['sha256']:
             return source['url'], '保存したSHA-256と不一致'
@@ -38,7 +54,7 @@ def main():
     parser.add_argument('--workers', type=int, default=4, choices=range(1, 9))
     args = parser.parse_args()
     root = Path(__file__).resolve().parents[1]
-    sources = [json.loads(line) for line in (root / 'data/sources.jsonl').read_text().splitlines() if line.strip()]
+    sources = [json.loads(line) for line in (root / 'data/sources.jsonl').read_text(encoding='utf-8').splitlines() if line.strip()]
     with ThreadPoolExecutor(max_workers=args.workers) as pool:
         results = list(pool.map(check, sources))
     failures = [(url, error) for url, error in results if error]

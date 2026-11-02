@@ -1,0 +1,56 @@
+{
+  "batch": "016",
+  "created_on": "2026-11-03",
+  "ids": {
+    "first": "Q003509",
+    "last": "Q007000"
+  },
+  "added": 3492,
+  "total": 7000,
+  "statuses": {
+    "candidate": 3492,
+    "verified": 0,
+    "approved": 0
+  },
+  "source_counts": {
+    "aio": 1036,
+    "jqac": 125,
+    "lookquiz": 0,
+    "jsquad": 2331,
+    "jglue": 0
+  },
+  "source_ids": {
+    "first_aio": "QA20CAPR-0022",
+    "aio_eligible_ids": 1532
+  },
+  "selection": {
+    "prompt_characters": "35-100",
+    "answer_max_characters": 30,
+    "hiragana_reading": "Pykakasi 2.3.0 initial conversion; needs review",
+    "duplicate_prompts_removed": true,
+    "answer_leaks_in_prompt_removed": true
+  },
+  "difficulty_distribution": {
+    "1": 11,
+    "2": 15,
+    "3": 3399,
+    "4": 46,
+    "5": 21
+  },
+  "pending_review": [
+    "source fact matching",
+    "answer uniqueness and aliases",
+    "hiragana reading",
+    "genre and subgenre",
+    "difficulty",
+    "tags",
+    "human approval"
+  ],
+  "sources": [
+    "https://jaqket.s3.ap-northeast-1.amazonaws.com/data/aio_02/aio_02_train.jsonl",
+    "https://taniokah.github.io/jqac/jqac20180625.tgz",
+    "https://github.com/yahoojapan/JGLUE/tree/6f071c09316baae89c3d083a90985b4b1cb9968c/datasets/jsquad-v1.3"
+  ],
+  "unit_tests": null,
+  "structural_errors": null
+}

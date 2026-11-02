@@ -28,3 +28,15 @@
 ## 審査状態
 
 追加分はすべてcandidateです。元データやWikipediaの存在だけを理由にverifiedにはしていません。問題・解説の事実、読み、一意性、別名による重複、分類・難易度の審査が残っています。人の承認済みのみを公開用に出力する既定動作は継続します。
+
+## バッチ016（Q003509〜Q007000）
+
+2026-11-03に3,492問を追加しました。いずれもcandidateで、元データの出典・ライセンス確認と各クイズの事実照合は別の作業として管理します。
+
+- **AI王 Version 2.0：1,036問。** QA20CAPR・QA20QBIKの問題を使用。公式ページは、株式会社キュービックとクイズ法人カプリティオが作成した対象問題をCC BY-SA 4.0で提供すると記載しています。非商用研究許諾だけのabc/EQIDEN由来問題は対象外です。
+- **JQAC：125問。** Japanese Question-Answering Corpus。配布ページはCC BY-SA 4.0と明記しています。行ごとの元資料URL、テーマ、話題を `data/imports/batch-016.jsonl` に記録しました。
+- **JGLUE JSQuAD v1.3：2,331問。** Yahoo Japan Corporationと早稲田大学河原研究室によるJGLUEのCC BY-SA 4.0データです。使用したリポジトリの固定コミット、分割ファイルのハッシュ、記事名、QA IDを対応表に記録しています。元のJSQuADは2021-11-01時点の日本語Wikipedia本文に基づく読解QAです。文脈なしでも成立する早押し問題とは限らないため、独立性と一意性の再審査が必要です。
+
+改変・再配布時は各元データのライセンス、作成者、出典、変更点を維持してください。AI王の配布元は[ライセンス謝辞](https://sites.google.com/view/project-aio/dataset)、JQACは[配布ページ](https://taniokah.github.io/jqac/)、JGLUEは[公式リポジトリの説明・ライセンス](https://github.com/yahoojapan/JGLUE/blob/6f071c09316baae89c3d083a90985b4b1cb9968c/README.md)を参照してください。
+
+取り込み時は設問長、同一設問、答え漏れ、仮のひらがな読みを機械処理しました。AI王とJSQuADの難易度3は暫定値です。JQACは作問者設定の値を保持していますが、いずれもこのリポジトリの難易度基準に照らした確認・試遊は未実施です。分類は自動初期割当て、タグは未審査の空欄です。対応表は [batch-016.jsonl](../data/imports/batch-016.jsonl)、件数・取得版・ハッシュは [manifest](../data/imports/batch-016-manifest.json) に記録しています。
