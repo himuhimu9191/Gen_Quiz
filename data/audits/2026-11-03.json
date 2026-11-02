@@ -693,5 +693,12 @@
     "held_duplicates": 0,
     "audit": "data/audits/batch-048.json",
     "record": "docs/batch-048.md"
+  },
+  "batch_049": {
+    "reviewed": 2,
+    "newly_verified": 0,
+    "held_duplicates": 0,
+    "audit": "data/audits/batch-049.json",
+    "record": "docs/batch-049.md"
   }
 }

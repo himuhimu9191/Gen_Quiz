@@ -34,6 +34,15 @@ class QuizTest(unittest.TestCase):
             for alias in r.get('rejected_aliases', []):
                 self.assertFalse(quiz.accepts(by_id[r['ID']]['答えjson'], alias), r['ID'])
 
+    def test_series_answers_omit_generic_series_suffix(self):
+        by_id = {q['ID']: q for q in quiz.load(ROOT / 'data/questions.jsonl')}
+        cases = [('Q000028', 'レイトン教授', 'レイトン教授シリーズ'),
+                 ('Q005723', 'スーパーロボット大戦', 'スーパーロボット大戦シリーズ')]
+        for qid, expected, rejected in cases:
+            answers = by_id[qid]['答えjson']
+            self.assertTrue(quiz.accepts(answers, expected), qid)
+            self.assertFalse(quiz.accepts(answers, rejected), qid)
+
     def test_trial_balance_and_integrity(self):
         questions = quiz.load(ROOT / 'data/questions.jsonl')
         reviews = quiz.load(ROOT / 'data/reviews.jsonl')
