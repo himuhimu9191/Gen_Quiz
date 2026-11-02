@@ -8,10 +8,10 @@
     "approved": 0
   },
   "statuses": {
-    "verified": 869,
-    "candidate": 6115,
+    "verified": 894,
+    "candidate": 6089,
     "approved": 0,
-    "held": 16,
+    "held": 17,
     "retired": 0
   },
   "reviewed_existing": [
@@ -335,8 +335,8 @@
   ],
   "tagging": {
     "schema_version": 1,
-    "reviewed": 277,
-    "pending": 6723,
+    "reviewed": 302,
+    "pending": 6698,
     "record": "docs/tags-2026-11-03.md",
     "policy": "Assign two content-specific tags only after reading the item; leave all other tags empty and pending."
   },
@@ -509,7 +509,7 @@
   },
   "structure_validation": {
     "errors": 0,
-    "warnings": 1157,
+    "warnings": 1156,
     "scope": "Structure only; not factual verification."
   },
   "batch_022": {
@@ -532,5 +532,12 @@
     "held_duplicates": 11,
     "audit": "data/audits/batch-024.json",
     "record": "docs/batch-024.md"
+  },
+  "batch_025": {
+    "reviewed": 25,
+    "newly_verified": 25,
+    "held_duplicates": 1,
+    "audit": "data/audits/batch-025.json",
+    "record": "docs/batch-025.md"
   }
 }

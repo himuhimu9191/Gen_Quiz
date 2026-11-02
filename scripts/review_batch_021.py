@@ -229,9 +229,10 @@ def dictionary(word):
 def claim(text, source, coverage):
     return {'claim': text, 'source': source['url'], 'locator': source['section'], 'checked_on': TODAY, 'coverage': coverage}
 
-def run(batch_number, decisions, held, supplements=None, headwords=None):
+def run(batch_number, decisions, held, supplements=None, headwords=None, reading_notes=None):
     supplements = supplements or {}
     headwords = headwords or {}
+    reading_notes = reading_notes or {}
     questions = quiz.load(ROOT / 'data/questions.jsonl')
     reviews = quiz.load(ROOT / 'data/reviews.jsonl')
     sources = quiz.load(ROOT / 'data/sources.jsonl')
@@ -279,6 +280,9 @@ def run(batch_number, decisions, held, supplements=None, headwords=None):
         claims = [claim(prompt.rstrip('？') + ' 正解は「' + answers[0] + '」。 ' + explanation, fact_source, ['問','解説','答えjson']),
                   claim('代表解答の読みは「' + answers[1] + '」。本文に記載された同義語・異読を設問の文脈に即して審査。', ds, ['答えjson'])]
         claims[0]['supporting_sources'] = [s['url'] for s in selected]
+        if number in reading_notes:
+            claims[1]['claim'] = reading_notes[number]
+            claims[1]['supporting_sources'] = [s['url'] for s in selected]
         claims[0]['method'] = '列挙した資料を組み合わせ、設問・解説・答えの主張を確認。単一の資料が全主張を含むとは限らない。'
         for s in selected[2 if key else 1:]:
             claims.append(claim('設問の主張・許容別名・読みの補足根拠を本文で確認。', s, ['問','解説','答えjson']))
