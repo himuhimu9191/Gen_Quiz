@@ -51,6 +51,25 @@ def main():
     if paragraph not in current:
         current += paragraph
     path.write_text(current+'## 7,000問到達前の記録'+history,encoding='utf-8')
+    path = ROOT/'docs/review-2026-11-03.md'
+    text = path.read_text(encoding='utf-8')
+    marker = '<!-- current-review:start -->'
+    end_marker = '<!-- current-review:end -->'
+    current = (marker+'\n## 現在の照合状況\n\n'
+        +f'合計{len(questions):,}行、出典照合済み{counts["verified"]:,}問、'
+        +f'未照合候補{counts["candidate"]:,}問、重複保留{counts["held"]:,}問。'
+        +f'タグ確認済みは{tagging["reviewed"]:,}問です。全件照合は未完了です。\n\n'
+        +f'直近の[バッチ{number}](batch-{number}.md)で{batch["reviewed"]}問を個別確認しました。'
+        +'現在の変更前後は各バッチの監査記録と[進捗](progress.md)に記載しています。\n'
+        +end_marker+'\n')
+    if marker in text:
+        text = re.sub(re.escape(marker)+r'.*?'+re.escape(end_marker)+'\n',lambda _:current,text,flags=re.S)
+    else:
+        title, history = text.split('\n',1)
+        history = history.replace('現在は合計7,000問','バッチ018終了時は合計7,000問')
+        history = history.replace('現在は7,000問について','この時点では7,000問について')
+        text = title+'\n\n'+current+'\n## バッチ018までの記録\n'+history
+    path.write_text(text,encoding='utf-8')
     tagged = [q for q in questions if rb[q['ID']]['tag_status']=='reviewed']
     lines = ['# タグ付与記録（2026-11-03）','',f'本文を個別確認した{len(tagged):,}問に、回答対象種別と内容領域の2タグを付けています。残り{tagging["pending"]:,}問は空配列で未審査です。','','| ID | タグ |','| --- | --- |']
     lines += ['| '+q['ID']+' | '+'、'.join(q['タグ'])+' |' for q in tagged]

@@ -229,7 +229,8 @@ def dictionary(word):
 def claim(text, source, coverage):
     return {'claim': text, 'source': source['url'], 'locator': source['section'], 'checked_on': TODAY, 'coverage': coverage}
 
-def run(batch_number, decisions, held):
+def run(batch_number, decisions, held, supplements=None):
+    supplements = supplements or {}
     questions = quiz.load(ROOT / 'data/questions.jsonl')
     reviews = quiz.load(ROOT / 'data/reviews.jsonl')
     sources = quiz.load(ROOT / 'data/sources.jsonl')
@@ -260,6 +261,8 @@ def run(batch_number, decisions, held):
             selected.append(dictionary('生揚げ'))
         if number == 4199:
             selected.append(dictionary('空手'))
+        additional = [dictionary(word) for word in supplements.get(number, [])]
+        selected.extend(additional)
         for source in selected:
             if source['url'] not in sb:
                 sources.append(source)
@@ -271,14 +274,16 @@ def run(batch_number, decisions, held):
         r['version'] += 1
         r.setdefault('change_history', []).append({'version':r['version'], 'date':TODAY, 'fields':fields + ['status'], 'reason':reason})
         # Specific primary-source evidence is used for facts where selected.
-        fact_source = selected[1] if key else ds
+        fact_source = selected[1] if key else (additional[0] if additional else ds)
         claims = [claim(prompt.rstrip('？') + ' 正解は「' + answers[0] + '」。 ' + explanation, fact_source, ['問','解説','答えjson']),
                   claim('代表解答の読みは「' + answers[1] + '」。本文に記載された同義語・異読を設問の文脈に即して審査。', ds, ['答えjson'])]
+        claims[0]['supporting_sources'] = [s['url'] for s in selected]
+        claims[0]['method'] = '列挙した資料を組み合わせ、設問・解説・答えの主張を確認。単一の資料が全主張を含むとは限らない。'
         for s in selected[2 if key else 1:]:
-            claims.append(claim('許容する別名の表記と読みを見出しで確認。', s, ['答えjson']))
+            claims.append(claim('設問の主張・許容別名・読みの補足根拠を本文で確認。', s, ['問','解説','答えjson']))
         # The primary pages do not supply every Japanese spelling/definition detail.
         if key:
-            claims.append(claim('日本語の代表表記・語義・読みを辞典の同項目で照合。', ds, ['問','解説','答えjson']))
+            claims.append(claim('日本語の代表表記・読みを辞典の同項目で照合。古い制度・競技構成は選定した一次資料を優先。', ds, ['答えjson']))
         r.update({'status':'verified', 'claims':claims, 'uniqueness_review':'設問の条件から「' + answers[0] + '」を特定。対象を同じくする正式な別名・異読は答え配列に記録。' + reason,
             'reading_status':'reviewed', 'classification_status':'reviewed', 'tag_status':'reviewed',
             'tag_review':{'checked_on':TODAY, 'method':'設問と解説を個別に読み、対象種別と内容領域を選定。', 'tags':tags},
@@ -287,7 +292,7 @@ def run(batch_number, decisions, held):
             'difficulty_status':'provisional', 'difficulty_review':{'checked_on':TODAY, 'level':level, 'reason':difficulty, 'basis':'一般成人向け。1・2は広い認知を見込む問題に限定し、件数配分では調整しない。試遊前。'},
             'verified_on':TODAY, 'verified_by':'assistant', 'verification_basis':'辞典・選定した一次資料の本文と読みを個別確認。難易度は暫定評価。',
             'pending':['人による最終審査','試遊で難易度を調整'], 'reviewer':None, 'reviewed_on':None, 'audit_batch':batch_number,
-            'research_entrypoints':list(dict.fromkeys(r.get('research_entrypoints', []) + [s['url'] for s in selected]))})
+            'research_entrypoints':r.get('research_entrypoints', []) + [s['url'] for s in selected if s['url'] not in r.get('research_entrypoints', [])]})
         if number == 4199:
             r.update({'time_sensitive':True, 'reference_date':TODAY, 'recheck_on':'2027-11-03'})
         changes.append({'ID':qid, 'before':before, 'after':copy.deepcopy(q), 'previous_status':old_review['status'], 'previous_version':old_review['version'], 'version':r['version'], 'reason':reason, 'difficulty_reason':difficulty})
