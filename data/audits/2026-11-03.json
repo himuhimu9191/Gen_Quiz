@@ -8,8 +8,8 @@
     "approved": 0
   },
   "statuses": {
-    "verified": 617,
-    "candidate": 2891,
+    "verified": 618,
+    "candidate": 2890,
     "approved": 0
   },
   "reviewed_existing": [
@@ -27,7 +27,9 @@
     {"ID": "Q000526", "version": 2, "status": "verified", "genre": "エンタメ＆スポーツ", "subgenre": "テレビ", "difficulty": 2, "answer": "ピタゴラスイッチ", "sources": ["https://www.web.nhk/tv/an/pitagora/pl/series-tep-ZZR21863JJ"]},
     {"ID": "Q000532", "version": 2, "status": "verified", "genre": "生活", "subgenre": "文具", "difficulty": 2, "answer": "MONO", "sources": ["https://www.tombow.com/products_brand/mono/mono-eraser/"]},
     {"ID": "Q000508", "version": 3, "status": "verified", "genre": "理系", "subgenre": "医学", "difficulty": 2, "answer": "骨粗鬆症", "sources": ["https://www.jpof.or.jp/osteoporosis/tabid249.html"]},
-    {"ID": "Q000511", "version": 3, "status": "verified", "genre": "社会", "subgenre": "司法", "difficulty": 2, "answer": "家庭裁判所", "sources": ["https://www.courts.go.jp/saiban/syurui/syurui_kazi/index.html", "https://www.courts.go.jp/saiban/syurui/syurui_syonen/index.html"]}
+    {"ID": "Q000511", "version": 3, "status": "verified", "genre": "社会", "subgenre": "司法", "difficulty": 2, "answer": "家庭裁判所", "sources": ["https://www.courts.go.jp/saiban/syurui/syurui_kazi/index.html", "https://www.courts.go.jp/saiban/syurui/syurui_syonen/index.html"]},
+    {"ID": "Q000556", "version": 2, "status": "verified", "genre": "理系", "subgenre": "天文学", "difficulty": 3, "answer": "コロナ", "sources": ["https://science.nasa.gov/sun/facts/"]},
+    {"ID": "Q000570", "version": 3, "status": "verified", "genre": "理系", "subgenre": "分子生物学", "difficulty": 3, "answer": "翻訳", "sources": ["https://kotobank.jp/word/%E7%BF%BB%E8%A8%B3-135307", "https://openstax.org/books/biology-2e/pages/15-5-ribosomes-and-protein-synthesis"]}
   ],
   "additions": [
     {"ID": "Q003501", "genre": "アニメ＆ゲーム", "subgenre": "ゲーム", "difficulty": 1, "answer": "ヨッシー", "reading": "よっしー", "source": "https://www.nintendo.com/jp/character/mario/characters/data/characters.xml"},
@@ -39,5 +41,5 @@
     {"ID": "Q003507", "genre": "社会", "subgenre": "法律", "difficulty": 2, "answer": "最高裁判所", "reading": "さいこうさいばんしょ", "source": "https://www.ndl.go.jp/constitution/etc/j01.html"},
     {"ID": "Q003508", "genre": "雑学", "subgenre": "郵便", "difficulty": 1, "answer": "郵便番号", "reading": "ゆうびんばんごう", "source": "https://www.post.japanpost.jp/service/search/zipcode/"}
   ],
-  "verification_scope": "Each listed source's content was read and matched to the question, explanation, answer, reading and classification. Q000435, Q000487, Q000490, Q000480, Q000466, Q000464, Q000522, Q000535, Q000496, Q000498, Q000526 and Q000532 were existing candidates updated and moved to verified after direct source review. Q000505, Q000508 and Q000511 were already verified and were re-reviewed against additional official sources. Difficulty remains provisional pending playtesting. Public approval remains a separate human review."
+  "verification_scope": "Each listed source's content was read and matched to the question, explanation, answer, reading and classification. Q000435, Q000487, Q000490, Q000480, Q000466, Q000464, Q000522, Q000535, Q000496, Q000498, Q000526, Q000532 and Q000556 were existing candidates updated and moved to verified after direct source review. Q000505, Q000508, Q000511 and Q000570 were already verified and were re-reviewed against additional authoritative sources. Difficulty remains provisional pending playtesting. Public approval remains a separate human review."
 }
