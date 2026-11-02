@@ -1,0 +1,26 @@
+{
+  "date": "2026-11-03",
+  "baseline_total": 3500,
+  "total": 3508,
+  "baseline_statuses": {
+    "verified": 597,
+    "candidate": 2903,
+    "approved": 0
+  },
+  "statuses": {
+    "verified": 605,
+    "candidate": 2903,
+    "approved": 0
+  },
+  "additions": [
+    {"ID": "Q003501", "genre": "アニメ＆ゲーム", "subgenre": "ゲーム", "difficulty": 1, "answer": "ヨッシー", "reading": "よっしー", "source": "https://www.nintendo.com/jp/character/mario/characters/data/characters.xml"},
+    {"ID": "Q003502", "genre": "文系", "subgenre": "世界史", "difficulty": 3, "answer": "マグナカルタ", "reading": "まぐなかるた", "source": "https://www.nationalarchives.gov.uk/education/teaching-resources/magna-carta-1214-1225/"},
+    {"ID": "Q003503", "genre": "理系", "subgenre": "地学", "difficulty": 2, "answer": "震度", "reading": "しんど", "source": "https://www.jma.go.jp/jma/kishou/know/shindo/index.html"},
+    {"ID": "Q003504", "genre": "生活", "subgenre": "食品", "difficulty": 1, "answer": "消費期限", "reading": "しょうひきげん", "source": "https://www.caa.go.jp/policies/policy/food_labeling/food_sanitation/expiration_date/assets/food_labeling_cms204_250331_01.pdf"},
+    {"ID": "Q003505", "genre": "理系", "subgenre": "気象", "difficulty": 2, "answer": "降水量", "reading": "こうすいりょう", "source": "https://www.jma.go.jp/jma/kishou/know/faq/faq1.html"},
+    {"ID": "Q003506", "genre": "エンタメ＆スポーツ", "subgenre": "スポーツ", "difficulty": 1, "answer": "オリンピックシンボル", "reading": "おりんぴっくしんぼる", "source": "https://olympics.com/ioc/olympic-rings"},
+    {"ID": "Q003507", "genre": "社会", "subgenre": "法律", "difficulty": 2, "answer": "最高裁判所", "reading": "さいこうさいばんしょ", "source": "https://www.ndl.go.jp/constitution/etc/j01.html"},
+    {"ID": "Q003508", "genre": "雑学", "subgenre": "郵便", "difficulty": 1, "answer": "郵便番号", "reading": "ゆうびんばんごう", "source": "https://www.post.japanpost.jp/service/search/zipcode/"}
+  ],
+  "verification_scope": "Each listed source's content was read and matched to the question, explanation, answer, reading and classification. Difficulty remains provisional pending playtesting. Public approval remains a separate human review."
+}
