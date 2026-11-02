@@ -8,14 +8,15 @@
     "approved": 0
   },
   "statuses": {
-    "verified": 608,
-    "candidate": 2900,
+    "verified": 609,
+    "candidate": 2899,
     "approved": 0
   },
   "reviewed_existing": [
     {"ID": "Q000435", "version": 2, "status": "verified", "genre": "エンタメ＆スポーツ", "subgenre": "スポーツ", "difficulty": 2, "answer": "SASUKE", "sources": ["https://www.tbs.co.jp/sasuke_rising/", "https://www.tbs.co.jp/sasuke_rising/stageguide/"]},
     {"ID": "Q000487", "version": 2, "status": "verified", "genre": "エンタメ＆スポーツ", "subgenre": "舞台", "difficulty": 2, "answer": "ライオンキング", "sources": ["https://www.shiki.jp/applause/lionking/"]},
-    {"ID": "Q000490", "version": 2, "status": "verified", "genre": "社会", "subgenre": "地理", "difficulty": 2, "answer": "バルセロナ", "sources": ["https://www.barcelonaturisme.com/wv3/en/"]}
+    {"ID": "Q000490", "version": 2, "status": "verified", "genre": "社会", "subgenre": "地理", "difficulty": 2, "answer": "バルセロナ", "sources": ["https://www.barcelonaturisme.com/wv3/en/"]},
+    {"ID": "Q000480", "version": 2, "status": "verified", "genre": "文系", "subgenre": "美術", "difficulty": 2, "answer": "モナリザ", "sources": ["https://collections.louvre.fr/en/ark:/53355/cl010062370"]}
   ],
   "additions": [
     {"ID": "Q003501", "genre": "アニメ＆ゲーム", "subgenre": "ゲーム", "difficulty": 1, "answer": "ヨッシー", "reading": "よっしー", "source": "https://www.nintendo.com/jp/character/mario/characters/data/characters.xml"},
@@ -27,5 +28,5 @@
     {"ID": "Q003507", "genre": "社会", "subgenre": "法律", "difficulty": 2, "answer": "最高裁判所", "reading": "さいこうさいばんしょ", "source": "https://www.ndl.go.jp/constitution/etc/j01.html"},
     {"ID": "Q003508", "genre": "雑学", "subgenre": "郵便", "difficulty": 1, "answer": "郵便番号", "reading": "ゆうびんばんごう", "source": "https://www.post.japanpost.jp/service/search/zipcode/"}
   ],
-  "verification_scope": "Each listed source's content was read and matched to the question, explanation, answer, reading and classification. Q000435, Q000487 and Q000490 are existing questions updated to version 2 and moved from candidate to verified after direct source review. Difficulty remains provisional pending playtesting. Public approval remains a separate human review."
+  "verification_scope": "Each listed source's content was read and matched to the question, explanation, answer, reading and classification. Q000435, Q000487, Q000490 and Q000480 are existing questions updated to version 2 and moved from candidate to verified after direct source review. Difficulty remains provisional pending playtesting. Public approval remains a separate human review."
 }
