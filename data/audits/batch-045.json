@@ -1,0 +1,25 @@
+{
+  "checked_on": "2026-11-03",
+  "batch": "045",
+  "method": "AI王公式配布データの編集差を個別改稿",
+  "reviewed": 9,
+  "newly_verified": 9,
+  "held_duplicates": 0,
+  "changes": [],
+  "statuses": {
+    "verified": 6965,
+    "held": 35
+  },
+  "warnings": 1163,
+  "processed": [
+    "Q000688",
+    "Q000860",
+    "Q001325",
+    "Q002293",
+    "Q002373",
+    "Q002438",
+    "Q002586",
+    "Q002638",
+    "Q003194"
+  ]
+}
