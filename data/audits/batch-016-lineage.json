@@ -1,0 +1,57 @@
+{
+  "checked_on": "2026-11-03",
+  "batch": "016",
+  "total": 3492,
+  "sources": {
+    "aio": 1036,
+    "jqac": 125,
+    "jsquad": 2331
+  },
+  "matches": {
+    "source_hash": 1036,
+    "prompt": 3483,
+    "answer": 3492,
+    "answer_span": 2331,
+    "article_title": 2331,
+    "reference_url": 125
+  },
+  "prompt_mismatches": [
+    {
+      "ID": "Q003509",
+      "source_id": "QA20CAPR-0022",
+      "reason": "reviewed question wording"
+    },
+    {
+      "ID": "Q003511",
+      "source_id": "QA20CAPR-0036",
+      "reason": "reviewed question wording"
+    },
+    {
+      "ID": "Q003512",
+      "source_id": "QA20CAPR-0046",
+      "reason": "reviewed question wording"
+    },
+    {
+      "ID": "Q003521",
+      "source_id": "QA20CAPR-0120",
+      "reason": "reviewed question wording"
+    },
+    {
+      "ID": "Q003545",
+      "source_id": "QA20CAPR-0384",
+      "reason": "reviewed question wording"
+    },
+    {
+      "ID": "Q003551",
+      "source_id": "QA20CAPR-0514",
+      "reason": "reviewed question wording"
+    }
+  ],
+  "missing": [],
+  "reading_check": {
+    "method": "Pykakasi 2.3.0 output compared to stored reading",
+    "format_valid": 3492,
+    "format_invalid": 0
+  },
+  "note": "Lineage and answer-span checks do not establish factual correctness, natural Japanese, unique answerability, pronunciation, classification, difficulty, tags, or human approval."
+}

@@ -8,75 +8,484 @@
     "approved": 0
   },
   "statuses": {
-    "verified": 624,
-    "candidate": 6376,
-    "approved": 0
+    "verified": 627,
+    "candidate": 6372,
+    "approved": 0,
+    "held": 1,
+    "retired": 0
   },
   "reviewed_existing": [
-    {"ID": "Q000435", "version": 2, "status": "verified", "genre": "エンタメ＆スポーツ", "subgenre": "スポーツ", "difficulty": 2, "answer": "SASUKE", "sources": ["https://www.tbs.co.jp/sasuke_rising/", "https://www.tbs.co.jp/sasuke_rising/stageguide/"]},
-    {"ID": "Q000487", "version": 2, "status": "verified", "genre": "エンタメ＆スポーツ", "subgenre": "舞台", "difficulty": 2, "answer": "ライオンキング", "sources": ["https://www.shiki.jp/applause/lionking/"]},
-    {"ID": "Q000490", "version": 2, "status": "verified", "genre": "社会", "subgenre": "地理", "difficulty": 2, "answer": "バルセロナ", "sources": ["https://www.barcelonaturisme.com/wv3/en/"]},
-    {"ID": "Q000480", "version": 2, "status": "verified", "genre": "文系", "subgenre": "美術", "difficulty": 2, "answer": "モナリザ", "sources": ["https://collections.louvre.fr/en/ark:/53355/cl010062370"]},
-    {"ID": "Q000466", "version": 2, "status": "verified", "genre": "理系", "subgenre": "物理", "difficulty": 3, "answer": "ゲオルクジーモンオーム", "sources": ["https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/modules/m42344/index.cnxml"]},
-    {"ID": "Q000464", "version": 4, "status": "verified", "genre": "雑学", "subgenre": "乗り物", "difficulty": 1, "answer": "タイヤ", "sources": ["https://www.jatma.or.jp/tyre_user/basicknowledgeontyre.html"]},
-    {"ID": "Q000522", "version": 3, "status": "verified", "genre": "雑学", "subgenre": "単位", "difficulty": 2, "answer": "ギガ", "sources": ["https://www.bipm.org/en/measurement-units/si-prefixes"]},
-    {"ID": "Q000535", "version": 2, "status": "verified", "genre": "理系", "subgenre": "動物", "difficulty": 2, "answer": "チーター", "sources": ["https://nationalzoo.si.edu/animals/cheetah"]},
-    {"ID": "Q000496", "version": 2, "status": "verified", "genre": "生活", "subgenre": "食品", "difficulty": 2, "answer": "マーガリン", "sources": ["https://j-margarine.com/kiso/what/"]},
-    {"ID": "Q000498", "version": 2, "status": "verified", "genre": "理系", "subgenre": "化学", "difficulty": 3, "answer": "フェノールフタレイン", "sources": ["https://openstax.org/books/chemistry-2e/pages/14-7-acid-base-titrations"]},
-    {"ID": "Q000505", "version": 3, "status": "verified", "genre": "生活", "subgenre": "料理", "difficulty": 2, "answer": "ひつまぶし", "sources": ["https://www.nagoya-info.jp/gourmet/detail/151/"]},
-    {"ID": "Q000526", "version": 2, "status": "verified", "genre": "エンタメ＆スポーツ", "subgenre": "テレビ", "difficulty": 2, "answer": "ピタゴラスイッチ", "sources": ["https://www.web.nhk/tv/an/pitagora/pl/series-tep-ZZR21863JJ"]},
-    {"ID": "Q000532", "version": 2, "status": "verified", "genre": "生活", "subgenre": "文具", "difficulty": 2, "answer": "MONO", "sources": ["https://www.tombow.com/products_brand/mono/mono-eraser/"]},
-    {"ID": "Q000508", "version": 3, "status": "verified", "genre": "理系", "subgenre": "医学", "difficulty": 2, "answer": "骨粗鬆症", "sources": ["https://www.jpof.or.jp/osteoporosis/tabid249.html"]},
-    {"ID": "Q000511", "version": 3, "status": "verified", "genre": "社会", "subgenre": "司法", "difficulty": 2, "answer": "家庭裁判所", "sources": ["https://www.courts.go.jp/saiban/syurui/syurui_kazi/index.html", "https://www.courts.go.jp/saiban/syurui/syurui_syonen/index.html"]},
-    {"ID": "Q000556", "version": 2, "status": "verified", "genre": "理系", "subgenre": "天文学", "difficulty": 3, "answer": "コロナ", "sources": ["https://science.nasa.gov/sun/facts/"]},
-    {"ID": "Q000570", "version": 3, "status": "verified", "genre": "理系", "subgenre": "分子生物学", "difficulty": 3, "answer": "翻訳", "sources": ["https://kotobank.jp/word/%E7%BF%BB%E8%A8%B3-135307", "https://openstax.org/books/biology-2e/pages/15-5-ribosomes-and-protein-synthesis"]},
-    {"ID": "Q000536", "version": 2, "status": "verified", "genre": "理系", "subgenre": "工学史", "difficulty": 2, "answer": "ギュスターヴエッフェル", "sources": ["https://www.nps.gov/stli/learn/historyculture/alexandre-gustave-eiffel.htm"]},
-    {"ID": "Q000538", "version": 3, "status": "verified", "genre": "社会", "subgenre": "世界地理", "difficulty": 2, "answer": "シンガポール", "sources": ["https://www.visitsingapore.com/neighbourhood/featured-neighbourhood/marina-bay/merlion-park/"]},
-    {"ID": "Q000547", "version": 2, "status": "verified", "genre": "社会", "subgenre": "鉄道", "difficulty": 3, "answer": "新函館北斗駅", "sources": ["https://www.jrhokkaido.co.jp/press/2015/151218-2.pdf"]}
+    {
+      "ID": "Q000435",
+      "version": 2,
+      "status": "verified",
+      "genre": "エンタメ＆スポーツ",
+      "subgenre": "スポーツ",
+      "difficulty": 2,
+      "answer": "SASUKE",
+      "sources": [
+        "https://www.tbs.co.jp/sasuke_rising/",
+        "https://www.tbs.co.jp/sasuke_rising/stageguide/"
+      ]
+    },
+    {
+      "ID": "Q000487",
+      "version": 2,
+      "status": "verified",
+      "genre": "エンタメ＆スポーツ",
+      "subgenre": "舞台",
+      "difficulty": 2,
+      "answer": "ライオンキング",
+      "sources": [
+        "https://www.shiki.jp/applause/lionking/"
+      ]
+    },
+    {
+      "ID": "Q000490",
+      "version": 2,
+      "status": "verified",
+      "genre": "社会",
+      "subgenre": "地理",
+      "difficulty": 2,
+      "answer": "バルセロナ",
+      "sources": [
+        "https://www.barcelonaturisme.com/wv3/en/"
+      ]
+    },
+    {
+      "ID": "Q000480",
+      "version": 2,
+      "status": "verified",
+      "genre": "文系",
+      "subgenre": "美術",
+      "difficulty": 2,
+      "answer": "モナリザ",
+      "sources": [
+        "https://collections.louvre.fr/en/ark:/53355/cl010062370"
+      ]
+    },
+    {
+      "ID": "Q000466",
+      "version": 2,
+      "status": "verified",
+      "genre": "理系",
+      "subgenre": "物理",
+      "difficulty": 3,
+      "answer": "ゲオルクジーモンオーム",
+      "sources": [
+        "https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/modules/m42344/index.cnxml"
+      ]
+    },
+    {
+      "ID": "Q000464",
+      "version": 4,
+      "status": "verified",
+      "genre": "雑学",
+      "subgenre": "乗り物",
+      "difficulty": 1,
+      "answer": "タイヤ",
+      "sources": [
+        "https://www.jatma.or.jp/tyre_user/basicknowledgeontyre.html"
+      ]
+    },
+    {
+      "ID": "Q000522",
+      "version": 3,
+      "status": "verified",
+      "genre": "雑学",
+      "subgenre": "単位",
+      "difficulty": 2,
+      "answer": "ギガ",
+      "sources": [
+        "https://www.bipm.org/en/measurement-units/si-prefixes"
+      ]
+    },
+    {
+      "ID": "Q000535",
+      "version": 2,
+      "status": "verified",
+      "genre": "理系",
+      "subgenre": "動物",
+      "difficulty": 2,
+      "answer": "チーター",
+      "sources": [
+        "https://nationalzoo.si.edu/animals/cheetah"
+      ]
+    },
+    {
+      "ID": "Q000496",
+      "version": 2,
+      "status": "verified",
+      "genre": "生活",
+      "subgenre": "食品",
+      "difficulty": 2,
+      "answer": "マーガリン",
+      "sources": [
+        "https://j-margarine.com/kiso/what/"
+      ]
+    },
+    {
+      "ID": "Q000498",
+      "version": 2,
+      "status": "verified",
+      "genre": "理系",
+      "subgenre": "化学",
+      "difficulty": 3,
+      "answer": "フェノールフタレイン",
+      "sources": [
+        "https://openstax.org/books/chemistry-2e/pages/14-7-acid-base-titrations"
+      ]
+    },
+    {
+      "ID": "Q000505",
+      "version": 3,
+      "status": "verified",
+      "genre": "生活",
+      "subgenre": "料理",
+      "difficulty": 2,
+      "answer": "ひつまぶし",
+      "sources": [
+        "https://www.nagoya-info.jp/gourmet/detail/151/"
+      ]
+    },
+    {
+      "ID": "Q000526",
+      "version": 2,
+      "status": "verified",
+      "genre": "エンタメ＆スポーツ",
+      "subgenre": "テレビ",
+      "difficulty": 2,
+      "answer": "ピタゴラスイッチ",
+      "sources": [
+        "https://www.web.nhk/tv/an/pitagora/pl/series-tep-ZZR21863JJ"
+      ]
+    },
+    {
+      "ID": "Q000532",
+      "version": 2,
+      "status": "verified",
+      "genre": "生活",
+      "subgenre": "文具",
+      "difficulty": 2,
+      "answer": "MONO",
+      "sources": [
+        "https://www.tombow.com/products_brand/mono/mono-eraser/"
+      ]
+    },
+    {
+      "ID": "Q000508",
+      "version": 3,
+      "status": "verified",
+      "genre": "理系",
+      "subgenre": "医学",
+      "difficulty": 2,
+      "answer": "骨粗鬆症",
+      "sources": [
+        "https://www.jpof.or.jp/osteoporosis/tabid249.html"
+      ]
+    },
+    {
+      "ID": "Q000511",
+      "version": 3,
+      "status": "verified",
+      "genre": "社会",
+      "subgenre": "司法",
+      "difficulty": 2,
+      "answer": "家庭裁判所",
+      "sources": [
+        "https://www.courts.go.jp/saiban/syurui/syurui_kazi/index.html",
+        "https://www.courts.go.jp/saiban/syurui/syurui_syonen/index.html"
+      ]
+    },
+    {
+      "ID": "Q000556",
+      "version": 2,
+      "status": "verified",
+      "genre": "理系",
+      "subgenre": "天文学",
+      "difficulty": 3,
+      "answer": "コロナ",
+      "sources": [
+        "https://science.nasa.gov/sun/facts/"
+      ]
+    },
+    {
+      "ID": "Q000570",
+      "version": 3,
+      "status": "verified",
+      "genre": "理系",
+      "subgenre": "分子生物学",
+      "difficulty": 3,
+      "answer": "翻訳",
+      "sources": [
+        "https://kotobank.jp/word/%E7%BF%BB%E8%A8%B3-135307",
+        "https://openstax.org/books/biology-2e/pages/15-5-ribosomes-and-protein-synthesis"
+      ]
+    },
+    {
+      "ID": "Q000536",
+      "version": 2,
+      "status": "verified",
+      "genre": "理系",
+      "subgenre": "工学史",
+      "difficulty": 2,
+      "answer": "ギュスターヴエッフェル",
+      "sources": [
+        "https://www.nps.gov/stli/learn/historyculture/alexandre-gustave-eiffel.htm"
+      ]
+    },
+    {
+      "ID": "Q000538",
+      "version": 3,
+      "status": "verified",
+      "genre": "社会",
+      "subgenre": "世界地理",
+      "difficulty": 2,
+      "answer": "シンガポール",
+      "sources": [
+        "https://www.visitsingapore.com/neighbourhood/featured-neighbourhood/marina-bay/merlion-park/"
+      ]
+    },
+    {
+      "ID": "Q000547",
+      "version": 2,
+      "status": "verified",
+      "genre": "社会",
+      "subgenre": "鉄道",
+      "difficulty": 3,
+      "answer": "新函館北斗駅",
+      "sources": [
+        "https://www.jrhokkaido.co.jp/press/2015/151218-2.pdf"
+      ]
+    }
   ],
   "additions": [
-    {"ID": "Q003501", "genre": "アニメ＆ゲーム", "subgenre": "ゲーム", "difficulty": 1, "answer": "ヨッシー", "reading": "よっしー", "source": "https://www.nintendo.com/jp/character/mario/characters/data/characters.xml"},
-    {"ID": "Q003502", "genre": "文系", "subgenre": "世界史", "difficulty": 3, "answer": "マグナカルタ", "reading": "まぐなかるた", "source": "https://www.nationalarchives.gov.uk/education/teaching-resources/magna-carta-1214-1225/"},
-    {"ID": "Q003503", "genre": "理系", "subgenre": "地学", "difficulty": 2, "answer": "震度", "reading": "しんど", "source": "https://www.jma.go.jp/jma/kishou/know/shindo/index.html"},
-    {"ID": "Q003504", "genre": "生活", "subgenre": "食品", "difficulty": 1, "answer": "消費期限", "reading": "しょうひきげん", "source": "https://www.caa.go.jp/policies/policy/food_labeling/food_sanitation/expiration_date/assets/food_labeling_cms204_250331_01.pdf"},
-    {"ID": "Q003505", "genre": "理系", "subgenre": "気象", "difficulty": 2, "answer": "降水量", "reading": "こうすいりょう", "source": "https://www.jma.go.jp/jma/kishou/know/faq/faq1.html"},
-    {"ID": "Q003506", "genre": "エンタメ＆スポーツ", "subgenre": "スポーツ", "difficulty": 1, "answer": "オリンピックシンボル", "reading": "おりんぴっくしんぼる", "source": "https://olympics.com/ioc/olympic-rings"},
-    {"ID": "Q003507", "genre": "社会", "subgenre": "法律", "difficulty": 2, "answer": "最高裁判所", "reading": "さいこうさいばんしょ", "source": "https://www.ndl.go.jp/constitution/etc/j01.html"},
-    {"ID": "Q003508", "genre": "雑学", "subgenre": "郵便", "difficulty": 1, "answer": "郵便番号", "reading": "ゆうびんばんごう", "source": "https://www.post.japanpost.jp/service/search/zipcode/"}
+    {
+      "ID": "Q003501",
+      "genre": "アニメ＆ゲーム",
+      "subgenre": "ゲーム",
+      "difficulty": 1,
+      "answer": "ヨッシー",
+      "reading": "よっしー",
+      "source": "https://www.nintendo.com/jp/character/mario/characters/data/characters.xml"
+    },
+    {
+      "ID": "Q003502",
+      "genre": "文系",
+      "subgenre": "世界史",
+      "difficulty": 3,
+      "answer": "マグナカルタ",
+      "reading": "まぐなかるた",
+      "source": "https://www.nationalarchives.gov.uk/education/teaching-resources/magna-carta-1214-1225/"
+    },
+    {
+      "ID": "Q003503",
+      "genre": "理系",
+      "subgenre": "地学",
+      "difficulty": 2,
+      "answer": "震度",
+      "reading": "しんど",
+      "source": "https://www.jma.go.jp/jma/kishou/know/shindo/index.html"
+    },
+    {
+      "ID": "Q003504",
+      "genre": "生活",
+      "subgenre": "食品",
+      "difficulty": 1,
+      "answer": "消費期限",
+      "reading": "しょうひきげん",
+      "source": "https://www.caa.go.jp/policies/policy/food_labeling/food_sanitation/expiration_date/assets/food_labeling_cms204_250331_01.pdf"
+    },
+    {
+      "ID": "Q003505",
+      "genre": "理系",
+      "subgenre": "気象",
+      "difficulty": 2,
+      "answer": "降水量",
+      "reading": "こうすいりょう",
+      "source": "https://www.jma.go.jp/jma/kishou/know/faq/faq1.html"
+    },
+    {
+      "ID": "Q003506",
+      "genre": "エンタメ＆スポーツ",
+      "subgenre": "スポーツ",
+      "difficulty": 1,
+      "answer": "オリンピックシンボル",
+      "reading": "おりんぴっくしんぼる",
+      "source": "https://olympics.com/ioc/olympic-rings"
+    },
+    {
+      "ID": "Q003507",
+      "genre": "社会",
+      "subgenre": "法律",
+      "difficulty": 2,
+      "answer": "最高裁判所",
+      "reading": "さいこうさいばんしょ",
+      "source": "https://www.ndl.go.jp/constitution/etc/j01.html"
+    },
+    {
+      "ID": "Q003508",
+      "genre": "雑学",
+      "subgenre": "郵便",
+      "difficulty": 1,
+      "answer": "郵便番号",
+      "reading": "ゆうびんばんごう",
+      "source": "https://www.post.japanpost.jp/service/search/zipcode/"
+    }
   ],
   "tagging": {
     "schema_version": 1,
-    "reviewed": 31,
-    "pending": 6969,
+    "reviewed": 34,
+    "pending": 6966,
     "record": "docs/tags-2026-11-03.md",
     "policy": "Assign two content-specific tags only after reading the item; leave all other tags empty and pending."
   },
   "batch_015": {
-    "reviewed_existing": ["Q000536", "Q000538", "Q000547"],
+    "reviewed_existing": [
+      "Q000536",
+      "Q000538",
+      "Q000547"
+    ],
     "added": 0,
-    "statuses": {"verified": 621, "candidate": 2887, "approved": 0},
+    "statuses": {
+      "verified": 621,
+      "candidate": 2887,
+      "approved": 0
+    },
     "tagged": 3,
     "record": "docs/batch-015.md"
   },
   "batch_016": {
-    "ids": {"first": "Q003509", "last": "Q007000"},
+    "ids": {
+      "first": "Q003509",
+      "last": "Q007000"
+    },
     "added": 3492,
-    "source_counts": {"aio": 1036, "jqac": 125, "jsquad": 2331},
-    "statuses": {"verified": 0, "candidate": 3492, "approved": 0},
-    "tag_statuses": {"reviewed": 0, "pending": 3492},
-    "difficulty_distribution": {"1": 11, "2": 15, "3": 3399, "4": 46, "5": 21},
+    "source_counts": {
+      "aio": 1036,
+      "jqac": 125,
+      "jsquad": 2331
+    },
+    "statuses": {
+      "verified": 0,
+      "candidate": 3492,
+      "approved": 0
+    },
+    "tag_statuses": {
+      "reviewed": 0,
+      "pending": 3492
+    },
+    "difficulty_distribution": {
+      "1": 11,
+      "2": 15,
+      "3": 3399,
+      "4": 46,
+      "5": 21
+    },
     "record": "docs/batch-016.md",
     "manifest": "data/imports/batch-016-manifest.json",
-    "pending": ["fact and question fit", "hiragana reading", "answer uniqueness and notation variants", "genre and subgenre", "difficulty calibration and playtesting", "tags", "human approval"]
+    "pending": [
+      "fact and question fit",
+      "hiragana reading",
+      "answer uniqueness and notation variants",
+      "genre and subgenre",
+      "difficulty calibration and playtesting",
+      "tags",
+      "human approval"
+    ]
   },
   "batch_017": {
-    "reviewed_existing": ["Q003509", "Q003511", "Q003512"],
+    "reviewed_existing": [
+      "Q003509",
+      "Q003511",
+      "Q003512"
+    ],
     "added": 0,
-    "statuses": {"verified": 624, "candidate": 6376, "approved": 0},
+    "statuses": {
+      "verified": 624,
+      "candidate": 6376,
+      "approved": 0
+    },
     "tagged": 3,
     "record": "docs/batch-017.md"
   },
-  "validation": {"unit_tests": 11, "structural_errors": 0, "warnings": 1157, "warning_breakdown": {"long_prompts": 5, "shared_answer_target": 1152}},
-  "source_recheck": {"checked": 705, "hash_matches": 184, "hash_mismatches_or_unavailable": 521, "batch_016_dataset_sources_checked": 3, "batch_016_dataset_hash_matches": 3, "note": "Most older mutable web pages no longer reproduce the saved retrieval bytes. A hash mismatch is a source snapshot reproducibility issue, not by itself evidence that the verified claim is false."},
-  "verification_scope": "For the listed verified records, each cited source was read and matched to the question, explanation, answer, reading and classification. Q000435, Q000487, Q000490, Q000480, Q000466, Q000464, Q000522, Q000535, Q000496, Q000498, Q000526, Q000532 and Q000556 were existing candidates updated and moved to verified after direct source review. Q000505, Q000508, Q000511 and Q000570 were already verified and were re-reviewed against additional authoritative sources. Q000536, Q000538 and Q000547 were checked against the official sources recorded for batch 015. Q003509, Q003511 and Q003512 were checked against Tokyo Metropolitan Government, AAOS, and University of Tokyo sources in batch 017. Of batch 016's 3,492 additions, these three have been checked question by question; the remainder are candidates. Difficulty remains provisional pending playtesting. Public approval remains a separate human review."
+  "validation": {
+    "unit_tests": 11,
+    "structural_errors": 0,
+    "warnings": 1157,
+    "warning_breakdown": {
+      "long_prompts": 5,
+      "shared_answer_target": 1152
+    }
+  },
+  "source_recheck": {
+    "checked": 705,
+    "hash_matches": 184,
+    "hash_mismatches_or_unavailable": 521,
+    "batch_016_dataset_sources_checked": 3,
+    "batch_016_dataset_hash_matches": 3,
+    "note": "Most older mutable web pages no longer reproduce the saved retrieval bytes. A hash mismatch is a source snapshot reproducibility issue, not by itself evidence that the verified claim is false."
+  },
+  "verification_scope": "For the listed verified records, each cited source was read and matched to the question, explanation, answer, reading and classification. Q000435, Q000487, Q000490, Q000480, Q000466, Q000464, Q000522, Q000535, Q000496, Q000498, Q000526, Q000532 and Q000556 were existing candidates updated and moved to verified after direct source review. Q000505, Q000508, Q000511 and Q000570 were already verified and were re-reviewed against additional authoritative sources. Q000536, Q000538 and Q000547 were checked against the official sources recorded for batch 015. Q003509, Q003511 and Q003512 were checked against Tokyo Metropolitan Government, AAOS, and University of Tokyo sources in batch 017. Of batch 016's 3,492 additions, these three have been checked question by question; the remainder are candidates. Difficulty remains provisional pending playtesting. Public approval remains a separate human review. Batch 018 directly checked Q003521, Q003545 and Q003551 against the cited textbook, museum and dictionary text; Q004237 is held as a duplicate of Q003551. The source-lineage checks for batch 016 verify transcription and answer spans only, not question quality or facts.",
+  "batch_018": {
+    "reviewed": [
+      "Q003521",
+      "Q003545",
+      "Q003551"
+    ],
+    "held_duplicates": [
+      {
+        "ID": "Q004237",
+        "duplicate_of": "Q003551"
+      }
+    ],
+    "statuses": {
+      "verified": 627,
+      "candidate": 6372,
+      "approved": 0,
+      "held": 1,
+      "retired": 0
+    },
+    "tagged": 3,
+    "reading_corrections": {
+      "Q003521": [
+        "ようりょくからだ",
+        "ようりょくたい"
+      ],
+      "Q003545": [
+        "みねうちち",
+        "みねうち"
+      ],
+      "Q003551": [
+        "せつしゃごめん",
+        "きりすてごめん"
+      ],
+      "Q004237": [
+        "せつしゃごめん",
+        "きりすてごめん"
+      ]
+    },
+    "record": "docs/batch-018.md",
+    "source_lineage_recheck": {
+      "aio": {
+        "rows": 1036,
+        "source_hash_matches": 1036,
+        "prompt_and_answer_match": 1033
+      },
+      "jqac": {
+        "rows": 125,
+        "prompt_match": 125,
+        "answer_match": 125,
+        "reference_match": 125
+      },
+      "jsquad": {
+        "rows": 2331,
+        "article_title_match": 2331,
+        "answer_match": 2331,
+        "answer_span_match": 2331,
+        "prompt_exact_match": 2328
+      },
+      "note": "Source lineage and answer spans match the pinned/cached datasets; this does not verify the underlying facts, standalone quiz quality, or pronunciation. Pykakasi output matched all 3,492 imported readings before manual review, but spot checks found incorrect readings."
+    }
+  }
 }
