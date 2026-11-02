@@ -229,18 +229,18 @@ def dictionary(word):
 def claim(text, source, coverage):
     return {'claim': text, 'source': source['url'], 'locator': source['section'], 'checked_on': TODAY, 'coverage': coverage}
 
-def main():
+def run(batch_number, decisions, held):
     questions = quiz.load(ROOT / 'data/questions.jsonl')
     reviews = quiz.load(ROOT / 'data/reviews.jsonl')
     sources = quiz.load(ROOT / 'data/sources.jsonl')
     qb = {q['ID']: q for q in questions}
     rb = {r['ID']: r for r in reviews}
     sb = {s['url']: s for s in sources}
-    if any(r.get('audit_batch') == '021' for r in reviews):
-        raise SystemExit('batch 021 already applied')
-    primary = {r['key']: r for r in json.loads((PC / 'metadata.json').read_text(encoding='utf-8'))}
+    if any(r.get('audit_batch') == batch_number for r in reviews):
+        raise SystemExit('batch ' + batch_number + ' already applied')
+    primary = {r['key']: r for r in json.loads((PC / 'metadata.json').read_text(encoding='utf-8'))} if any(d[-1] for d in decisions) else {}
     changes = []
-    for number, genre, subgenre, level, tags, prompt, explanation, answers, reason, difficulty, key in DECISIONS:
+    for number, genre, subgenre, level, tags, prompt, explanation, answers, reason, difficulty, key in decisions:
         qid = f'Q{number:06}'
         q, r = qb[qid], rb[qid]
         before, old_review = copy.deepcopy(q), copy.deepcopy(r)
@@ -286,18 +286,18 @@ def main():
             'alias_review':{'checked_on':TODAY, 'accepted':answers[2:], 'reason':'記録した同項目と別名の見出しを参照。俗な略称と正式な別称を区別して選定。'},
             'difficulty_status':'provisional', 'difficulty_review':{'checked_on':TODAY, 'level':level, 'reason':difficulty, 'basis':'一般成人向け。1・2は広い認知を見込む問題に限定し、件数配分では調整しない。試遊前。'},
             'verified_on':TODAY, 'verified_by':'assistant', 'verification_basis':'辞典・選定した一次資料の本文と読みを個別確認。難易度は暫定評価。',
-            'pending':['人による最終審査','試遊で難易度を調整'], 'reviewer':None, 'reviewed_on':None, 'audit_batch':'021',
+            'pending':['人による最終審査','試遊で難易度を調整'], 'reviewer':None, 'reviewed_on':None, 'audit_batch':batch_number,
             'research_entrypoints':list(dict.fromkeys(r.get('research_entrypoints', []) + [s['url'] for s in selected]))})
         if number == 4199:
             r.update({'time_sensitive':True, 'reference_date':TODAY, 'recheck_on':'2027-11-03'})
         changes.append({'ID':qid, 'before':before, 'after':copy.deepcopy(q), 'previous_status':old_review['status'], 'previous_version':old_review['version'], 'version':r['version'], 'reason':reason, 'difficulty_reason':difficulty})
-    for number, (original, reason) in HELD.items():
+    for number, (original, reason) in held.items():
         qid, duplicate = f'Q{number:06}', f'Q{original:06}'
         r = rb[qid]
         previous = copy.deepcopy(r)
         r['version'] += 1
         r.setdefault('change_history', []).append({'version':r['version'], 'date':TODAY, 'fields':['status'], 'reason':reason})
-        r.update({'status':'held', 'duplicate_of':duplicate, 'audit_batch':'021', 'pending':[reason + ' 統合または異なる知識を問う再設計が必要。']})
+        r.update({'status':'held', 'duplicate_of':duplicate, 'audit_batch':batch_number, 'pending':[reason + ' 統合または異なる知識を問う再設計が必要。']})
         changes.append({'ID':qid, 'previous_status':previous['status'], 'status':'held', 'duplicate_of':duplicate, 'version':r['version'], 'reason':reason})
     errors, warnings = quiz.validate(questions, reviews)
     if errors:
@@ -305,11 +305,11 @@ def main():
     for name, rows in [('questions',questions),('reviews',reviews),('sources',sources)]:
         save(ROOT / ('data/' + name + '.jsonl'), rows)
     statuses = dict(collections.Counter(r['status'] for r in reviews))
-    audit = {'checked_on':TODAY, 'reviewed':len(DECISIONS), 'newly_verified':sum(c.get('previous_status') == 'candidate' and c.get('after') is not None for c in changes), 'held_duplicates':len(HELD), 'changes':changes, 'statuses':statuses, 'warnings':len(warnings)}
-    (ROOT/'data/audits/batch-021.json').write_text(json.dumps(audit, ensure_ascii=False, indent=2)+'\n', encoding='utf-8')
+    audit = {'checked_on':TODAY, 'reviewed':len(decisions), 'newly_verified':sum(c.get('previous_status') == 'candidate' and c.get('after') is not None for c in changes), 'held_duplicates':len(held), 'changes':changes, 'statuses':statuses, 'warnings':len(warnings)}
+    (ROOT/f'data/audits/batch-{batch_number}.json').write_text(json.dumps(audit, ensure_ascii=False, indent=2)+'\n', encoding='utf-8')
     for status, suffix in [('all','all'),('candidate','candidates'),('verified','verified')]:
         quiz.export_csv(questions,reviews,status,ROOT/f'data/quiz_{suffix}.csv')
-    print('reviewed',len(DECISIONS),'held',len(HELD),'states',statuses,'warnings',len(warnings))
+    print('reviewed',len(decisions),'held',len(held),'states',statuses,'warnings',len(warnings))
 
 if __name__ == '__main__':
-    main()
+    run('021', DECISIONS, HELD)
