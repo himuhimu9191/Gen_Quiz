@@ -65,6 +65,8 @@ def validate(questions, reviews):
         if not isinstance(answers, list) or len(answers) < 2 or any(not isinstance(a, str) or not a.strip() for a in answers):
             errors.append(f'{qid}: 代表表記と読みを含む配列が必要')
         else:
+            if not re.fullmatch(r'[ぁ-ゖー]+', answers[1]):
+                errors.append(f'{qid}: 2番目の読みはひらがなと長音符のみで登録する')
             # The required first two entries may normalize to the same value.
             keys = [normalize(a) for a in answers]
             if len(set(keys[2:])) != len(keys[2:]) or any(k in keys[:2] for k in keys[2:]):

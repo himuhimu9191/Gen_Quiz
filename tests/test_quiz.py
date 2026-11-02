@@ -97,6 +97,16 @@ class QuizTest(unittest.TestCase):
         self.assertTrue(any('根拠なし' in e for e in errors))
         self.assertTrue(any('人の承認記録なし' in e for e in errors))
 
+    def test_reading_requires_hiragana_input(self):
+        questions = copy.deepcopy(quiz.load(ROOT / 'data/questions.jsonl')[:1])
+        reviews = quiz.load(ROOT / 'data/reviews.jsonl')[:1]
+        questions[0]['答えjson'][1] = 'ドラエモン'
+        errors, _ = quiz.validate(questions, reviews)
+        self.assertTrue(any('2番目の読み' in e for e in errors))
+        questions[0]['答えjson'][1] = 'どらえもん'
+        errors, _ = quiz.validate(questions, reviews)
+        self.assertEqual(errors, [])
+
     def test_csv_roundtrip_and_release_filter(self):
         questions = quiz.load(ROOT / 'data/questions.jsonl')
         reviews = quiz.load(ROOT / 'data/reviews.jsonl')

@@ -24,6 +24,8 @@
 - [バッチ016の候補3,492問追加](docs/batch-016.md)
 - [バッチ017の候補3問の再照合](docs/batch-017.md)
 - [バッチ018の候補3問の再照合と重複保留](docs/batch-018.md)
+- [バッチ019の読み形式86問修正](docs/batch-019.md)
+- [バッチ020の辞書読み171問校正](docs/batch-020.md)
 - [独立タグ34問の付与記録](docs/tags-2026-11-03.md)
 - [各区分から1問ずつの抜粋](docs/preview.md)
 - [問題のJSONL原本](data/questions.jsonl)

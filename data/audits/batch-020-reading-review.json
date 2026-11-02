@@ -1,0 +1,2572 @@
+{
+  "checked_on": "2026-11-03",
+  "changed": 171,
+  "scope": "Manually selected complete dictionary headwords; canonical reading only. Quiz review states, tags, difficulty and genres were preserved.",
+  "changes": [
+    {
+      "ID": "Q000442",
+      "answer": "鳩時計",
+      "before": "はととけい",
+      "after": "はとどけい",
+      "previous_version": 3,
+      "version": 4,
+      "status_preserved": "verified",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E9%B3%A9%E6%99%82%E8%A8%88-603203",
+        "locator": "見出し「鳩時計 （読み）ハトドケイ」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "e1af5c2ba1525da06aa17f10eda12e2b20b3dda89f00e098b489d95b5b305c4e"
+      }
+    },
+    {
+      "ID": "Q000728",
+      "answer": "鏡開き",
+      "before": "かがみひらき",
+      "after": "かがみびらき",
+      "previous_version": 2,
+      "version": 3,
+      "status_preserved": "verified",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E9%8F%A1%E9%96%8B%E3%81%8D-43403",
+        "locator": "見出し「鏡開き （読み）カガミビラキ」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "433e08138d625b1caa4782ab4b9cfd84694bcb31fb0c26d666dc2aadfd8b51ca"
+      }
+    },
+    {
+      "ID": "Q000741",
+      "answer": "平敦盛",
+      "before": "たいらあつもり",
+      "after": "たいらのあつもり",
+      "previous_version": 2,
+      "version": 3,
+      "status_preserved": "verified",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E5%B9%B3%E6%95%A6%E7%9B%9B-92205",
+        "locator": "見出し「平敦盛 （読み）タイラノアツモリ」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "a5596fd73f738ee4e31a23ae0ab3afdfcc54d03f76ea0f22842774cf0a119887"
+      }
+    },
+    {
+      "ID": "Q000764",
+      "answer": "高瀬舟",
+      "before": "たかせふね",
+      "after": "たかせぶね",
+      "previous_version": 2,
+      "version": 3,
+      "status_preserved": "verified",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E9%AB%98%E7%80%AC%E8%88%9F-92610",
+        "locator": "見出し「高瀬舟 （読み）タカセブネ」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "4f51ebc44bdbc0d81625d0672d9cf7651f3fafd033e9475a61de1784761add82"
+      }
+    },
+    {
+      "ID": "Q000911",
+      "answer": "三種の神器",
+      "before": "さんしゅのしんき",
+      "after": "さんしゅのじんぎ",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E4%B8%89%E7%A8%AE%E3%81%AE%E7%A5%9E%E5%99%A8-70816",
+        "locator": "見出し「三種の神器 （読み）サンシュノジンギ」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "8734dfd1bf284341de557c86a72b4d516200854798781663273a093ccb4d53bc"
+      }
+    },
+    {
+      "ID": "Q001021",
+      "answer": "今井正",
+      "before": "いまいせい",
+      "after": "いまいただし",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E4%BB%8A%E4%BA%95%E6%AD%A3-32196",
+        "locator": "見出し「今井正 （読み）イマイタダシ」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "5a13f6fdc2747eb1b4cf984786ee6d241e602afad6ec3a5ef98cc46d4d967164"
+      }
+    },
+    {
+      "ID": "Q001135",
+      "answer": "三すくみ",
+      "before": "みすくみ",
+      "after": "さんすくみ",
+      "previous_version": 2,
+      "version": 3,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E4%B8%89%E3%81%99%E3%81%8F%E3%81%BF-1326891",
+        "locator": "見出し「三すくみ （読み）さんすくみ」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "6dc20fb5ade8efcc38aa667ab86962ac29c12010ce10d87429926a2ea4b44820"
+      }
+    },
+    {
+      "ID": "Q001171",
+      "answer": "冬虫夏草",
+      "before": "とうちゅうなつくさ",
+      "after": "とうちゅうかそう",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E5%86%AC%E8%99%AB%E5%A4%8F%E8%8D%89-103897",
+        "locator": "見出し「冬虫夏草 （読み）トウチュウカソウ」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "bf716aae5778c1097289efb143bf193d87cc18ed97f37741488278e0da3bdbe8"
+      }
+    },
+    {
+      "ID": "Q001195",
+      "answer": "日時計",
+      "before": "にちじけい",
+      "after": "ひどけい",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E6%97%A5%E6%99%82%E8%A8%88-120328",
+        "locator": "見出し「日時計 （読み）ヒドケイ」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "541e5ce986b6713d5d92d01cffb060ccb1159e4700c68a465fcf67d4eaa4b81d"
+      }
+    },
+    {
+      "ID": "Q001201",
+      "answer": "痛車",
+      "before": "つうくるま",
+      "after": "いたしゃ",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E7%97%9B%E8%BB%8A-1738682",
+        "locator": "見出し「痛車 （読み）イタシャ」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "e06984c68ba9a57b94a1cf472d8701019baf7cfe5cfee84fb1060bb876c2f5c6"
+      }
+    },
+    {
+      "ID": "Q001272",
+      "answer": "千利休",
+      "before": "せんりきゅう",
+      "after": "せんのりきゅう",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E5%8D%83%E5%88%A9%E4%BC%91-18237",
+        "locator": "見出し「千利休 （読み）センノリキュウ」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "6151e3da265b7738a8a920cc1b442a49352c46ba87507a4eb8367b278dac034e"
+      }
+    },
+    {
+      "ID": "Q001282",
+      "answer": "軍艦巻",
+      "before": "ぐんかんかん",
+      "after": "ぐんかんまき",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E8%BB%8D%E8%89%A6%E5%B7%BB-487619",
+        "locator": "見出し「軍艦巻 （読み）グンカンマキ」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "3f5a548973415805f5ff035b64c78e2e2bae35653fadf4b6d3e6666f5cbaa631"
+      }
+    },
+    {
+      "ID": "Q001286",
+      "answer": "桜島",
+      "before": "さくらしま",
+      "after": "さくらじま",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E6%A1%9C%E5%B3%B6-68797",
+        "locator": "見出し「桜島 （読み）サクラジマ」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "5c02e515466bf072770ca00d361539caea5e2813a0eb320fdc0ac7ec41f3c824"
+      }
+    },
+    {
+      "ID": "Q001304",
+      "answer": "種子島",
+      "before": "しゅししま",
+      "after": "たねがしま",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E7%A8%AE%E5%AD%90%E5%B3%B6-93986",
+        "locator": "見出し「種子島 （読み）タネガシマ」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "14dee618577c4270177217a79fa5f087069f48e0c9c443d2652f645b8efa1e1c"
+      }
+    },
+    {
+      "ID": "Q001309",
+      "answer": "辰吉丈一郎",
+      "before": "たつきちじょういちろう",
+      "after": "たつよしじょういちろう",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E8%BE%B0%E5%90%89%E4%B8%88%E4%B8%80%E9%83%8E-1089644",
+        "locator": "見出し「辰吉丈一郎 （読み）たつよし じょういちろう」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "7c01423eb2ebf37a9dda705a925dea018d0a4b63486e6c09bb852fd801303ab6"
+      }
+    },
+    {
+      "ID": "Q001384",
+      "answer": "源義経",
+      "before": "みなもとよしつね",
+      "after": "みなもとのよしつね",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E6%BA%90%E7%BE%A9%E7%B5%8C-139234",
+        "locator": "見出し「源義経 （読み）ミナモトノヨシツネ」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "72d6000f1b2dbdc4beda238a82ca18f910888e4b2511993ae8da2480fec4f868"
+      }
+    },
+    {
+      "ID": "Q001430",
+      "answer": "小野小町",
+      "before": "おのこまち",
+      "after": "おののこまち",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E5%B0%8F%E9%87%8E%E5%B0%8F%E7%94%BA-40934",
+        "locator": "見出し「小野小町 （読み）オノノコマチ」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "3f12ba7ecbad493038e5bf6b5c6aac23794ff024077533dfb32ed297416b136d"
+      }
+    },
+    {
+      "ID": "Q001432",
+      "answer": "弁才天",
+      "before": "べんさいてん",
+      "after": "べんざいてん",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E5%BC%81%E6%89%8D%E5%A4%A9-624772",
+        "locator": "見出し「弁才天 （読み）ベンザイテン」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "a9a31bffedea21d54743b8a35769d74a6fffcbfd3581924a87ea9d195e619cd3"
+      }
+    },
+    {
+      "ID": "Q001467",
+      "answer": "君の名は",
+      "before": "くんのめいは",
+      "after": "きみのなは",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E5%90%9B%E3%81%AE%E5%90%8D%E3%81%AF-51608",
+        "locator": "見出し「君の名は （読み）キミノナハ」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "0d744dc1668295c5a55c348325fd5c2504db0d1563afbbcf959a4d0fc97ec9e7"
+      }
+    },
+    {
+      "ID": "Q001480",
+      "answer": "阿寒湖",
+      "before": "あかんみずうみ",
+      "after": "あかんこ",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E9%98%BF%E5%AF%92%E6%B9%96-24509",
+        "locator": "見出し「阿寒湖 （読み）アカンコ」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "bcf43d9f4e718113b2a9a0f42857fca3689259fa013130b2021ca70e8c1738aa"
+      }
+    },
+    {
+      "ID": "Q001555",
+      "answer": "辻村深月",
+      "before": "つじむらみずき",
+      "after": "つじむらみづき",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E8%BE%BB%E6%9D%91%E6%B7%B1%E6%9C%88-189954",
+        "locator": "見出し「辻村深月 （読み）ツジムラミヅキ」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "77bcbfb2129c4ba14b159bf180c5a1dea73665dfd7b7b64fbe9504ab91dbb21d"
+      }
+    },
+    {
+      "ID": "Q001563",
+      "answer": "塵芥集",
+      "before": "ちりあくたしゅう",
+      "after": "じんかいしゅう",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E5%A1%B5%E8%8A%A5%E9%9B%86-81363",
+        "locator": "見出し「塵芥集 （読み）ジンカイシュウ」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "043d02995b94b42506e5929b128b482ee89ecda062774551aa0634b5416ff6e7"
+      }
+    },
+    {
+      "ID": "Q001578",
+      "answer": "天目山",
+      "before": "てんもくやま",
+      "after": "てんもくざん",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E5%A4%A9%E7%9B%AE%E5%B1%B1-102810",
+        "locator": "見出し「天目山 （読み）テンモクザン」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "947e1f3916783b76125de4d66f35b441d1eebf191ae372f65581b46517bdfb3f"
+      }
+    },
+    {
+      "ID": "Q001598",
+      "answer": "恵方巻",
+      "before": "えほうかん",
+      "after": "えほうまき",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E6%81%B5%E6%96%B9%E5%B7%BB-446379",
+        "locator": "見出し「恵方巻 （読み）エホウマキ」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "3584510e1dc8fa2365df994f71a700bc3832ed44ed1f41dc3263576a2db8bd81"
+      }
+    },
+    {
+      "ID": "Q001612",
+      "answer": "かき氷",
+      "before": "かきこおり",
+      "after": "かきごおり",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E3%81%8B%E3%81%8D%E6%B0%B7-1516343",
+        "locator": "見出し「かき氷 （読み）かきごおり」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "1d768a9dff4a53ccfd95d0f20232ee01caa2542b58d9567a9e1fb90629fb5b32"
+      }
+    },
+    {
+      "ID": "Q001647",
+      "answer": "洞庭湖",
+      "before": "どうていみずうみ",
+      "after": "どうていこ",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E6%B4%9E%E5%BA%AD%E6%B9%96-103926",
+        "locator": "見出し「洞庭湖 （読み）ドウテイコ （その他表記）Dòng tíng hú」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "d3c5d7c29bc1a9eb35bd7ce6fddf7bdca06b6845bf4cf5b19bce4cc092f9956c"
+      }
+    },
+    {
+      "ID": "Q001651",
+      "answer": "万城目学",
+      "before": "まんじょうめがく",
+      "after": "まきめまなぶ",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E4%B8%87%E5%9F%8E%E7%9B%AE%E5%AD%A6-1705034",
+        "locator": "見出し「万城目学 （読み）マキメマナブ」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "1a23f53a564d9a6681a82e13913920bf520fec42ccb95aaa2809bc1ec89341ea"
+      }
+    },
+    {
+      "ID": "Q001672",
+      "answer": "林子平",
+      "before": "りんこたいら",
+      "after": "はやししへい",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E6%9E%97%E5%AD%90%E5%B9%B3-14665",
+        "locator": "見出し「林子平 （読み）ハヤシシヘイ」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "4754b65489b3d58b3e4324ec7e7b31c615c737ffe543190c675fb99bc7282f62"
+      }
+    },
+    {
+      "ID": "Q001684",
+      "answer": "角田光代",
+      "before": "かくだみつよ",
+      "after": "かくたみつよ",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E8%A7%92%E7%94%B0%E5%85%89%E4%BB%A3-460493",
+        "locator": "見出し「角田光代 （読み）カクタミツヨ」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "930647609c59341fb0f33b1bdf603b95fd22a52921e5deb3f3d5d5ac2e723f26"
+      }
+    },
+    {
+      "ID": "Q001694",
+      "answer": "五重塔",
+      "before": "ごじゅうとう",
+      "after": "ごじゅうのとう",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E4%BA%94%E9%87%8D%E5%A1%94-3152509",
+        "locator": "見出し「五重塔 （読み）ゴジュウノトウ」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "597557e0fb652ac73e4522bc2d587c05ab390478afc71a218084b17a2fdccdc1"
+      }
+    },
+    {
+      "ID": "Q001739",
+      "answer": "八丈島",
+      "before": "はちじょうしま",
+      "after": "はちじょうじま",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E5%85%AB%E4%B8%88%E5%B3%B6-114788",
+        "locator": "見出し「八丈島 （読み）ハチジョウジマ」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "6a59fcf187538af8e1e533bc43f099362a126b80da6ebb885c2f86c11dbe9554"
+      }
+    },
+    {
+      "ID": "Q001749",
+      "answer": "前田山英五郎",
+      "before": "まえださんえいごろう",
+      "after": "まえだやまえいごろう",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E5%89%8D%E7%94%B0%E5%B1%B1%E8%8B%B1%E4%BA%94%E9%83%8E-633264",
+        "locator": "見出し「前田山英五郎 （読み）マエダヤマエイゴロウ」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "2b5685ab4372d7f23aa49456e40ffa29e07fac7e2c5a797f36ef485c55a32188"
+      }
+    },
+    {
+      "ID": "Q001756",
+      "answer": "中馬庚",
+      "before": "なかうまこう",
+      "after": "ちゅうまかのえ",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E4%B8%AD%E9%A6%AC%E5%BA%9A-567864",
+        "locator": "見出し「中馬庚 （読み）チュウマカノエ」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "86230bb24bf8f4749a11f070b72ac2af74864e94f824a48eac560a5bcd949676"
+      }
+    },
+    {
+      "ID": "Q001758",
+      "answer": "凝灰岩",
+      "before": "ぎょうかいいわ",
+      "after": "ぎょうかいがん",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E5%87%9D%E7%81%B0%E5%B2%A9-52456",
+        "locator": "見出し「凝灰岩 （読み）ギョウカイガン （その他表記）tuff」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "3568b60befc1e9c16bd651278679c42e26cc8a592e9426ea46a4189f44f2bc29"
+      }
+    },
+    {
+      "ID": "Q001760",
+      "answer": "熊谷一弥",
+      "before": "くまがやかずや",
+      "after": "くまがいいちや",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E7%86%8A%E8%B0%B7%E4%B8%80%E5%BC%A5-55923",
+        "locator": "見出し「熊谷一弥 （読み）クマガイイチヤ」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "971975bea00d2411abf3784d69d48cfdae411e4cb1f0dc15c65eb8ffe9387b78"
+      }
+    },
+    {
+      "ID": "Q001807",
+      "answer": "在原業平",
+      "before": "ありわらなりひら",
+      "after": "ありわらのなりひら",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E5%9C%A8%E5%8E%9F%E6%A5%AD%E5%B9%B3-28111",
+        "locator": "見出し「在原業平 （読み）アリワラノナリヒラ」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "d4a02793de2bfbae2e792a29038a1a85255853ba577fb0d68fbb632a989c90a6"
+      }
+    },
+    {
+      "ID": "Q001819",
+      "answer": "冷や汁",
+      "before": "ひやしる",
+      "after": "ひやじる",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E5%86%B7%E3%82%84%E6%B1%81-368461",
+        "locator": "見出し「冷や汁 （読み）ひやじる」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "0c2a85545a16b58d9d2d6a67d5500b73ad9615479897694e372a7e74bbe49a77"
+      }
+    },
+    {
+      "ID": "Q001876",
+      "answer": "塵劫記",
+      "before": "じんごうき",
+      "after": "じんこうき",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E5%A1%B5%E5%8A%AB%E8%A8%98-81671",
+        "locator": "見出し「塵劫記 （読み）ジンコウキ」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "8767f817b2ae8bfc4f4004cb9342cabf3b7124baf57ccbf3da5a25de57d17df7"
+      }
+    },
+    {
+      "ID": "Q001890",
+      "answer": "役所広司",
+      "before": "やくしょひろし",
+      "after": "やくしょこうじ",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E5%BD%B9%E6%89%80%E5%BA%83%E5%8F%B8-1116259",
+        "locator": "見出し「役所広司 （読み）やくしょ こうじ」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "6203707d5d663cc13819e1693c66cad95bb432fce7041d29ba0963c86f3185e1"
+      }
+    },
+    {
+      "ID": "Q001895",
+      "answer": "小野道風",
+      "before": "おのとうふう",
+      "after": "おののとうふう",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E5%B0%8F%E9%87%8E%E9%81%93%E9%A2%A8-40936",
+        "locator": "見出し「小野道風 （読み）オノノトウフウ」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "453a040bc1a038c3a1d0655c087f06e0b6fef6290d3a7f3d931083daa651b8a1"
+      }
+    },
+    {
+      "ID": "Q001940",
+      "answer": "国際通り",
+      "before": "こくさいつうり",
+      "after": "こくさいどおり",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E5%9B%BD%E9%9A%9B%E9%80%9A%E3%82%8A-677762",
+        "locator": "見出し「国際通り （読み）コクサイドオリ」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "68141f8044237fc5d917f3918e72208fb184df1d305064e0635154801d4cee40"
+      }
+    },
+    {
+      "ID": "Q001960",
+      "answer": "火垂るの墓",
+      "before": "ほたるるのはか",
+      "after": "ほたるのはか",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E7%81%AB%E5%9E%82%E3%82%8B%E3%81%AE%E5%A2%93-690307",
+        "locator": "見出し「火垂るの墓 （読み）ホタルノハカ」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "88fdcf6a45e74d05ba7c229473d2b6a631aee5400ed3baf89744c39e3dc583e0"
+      }
+    },
+    {
+      "ID": "Q002029",
+      "answer": "菅原道真",
+      "before": "すがわらどうしん",
+      "after": "すがわらのみちざね",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E8%8F%85%E5%8E%9F%E9%81%93%E7%9C%9F-83478",
+        "locator": "見出し「菅原道真 （読み）スガワラノミチザネ」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "879f18c2537ee62daa73de184291c70ea0e2c0c4d363a22db986cecc9157aeed"
+      }
+    },
+    {
+      "ID": "Q002152",
+      "answer": "富嶽三十六景",
+      "before": "とみたけさんじゅうろくけい",
+      "after": "ふがくさんじゅうろっけい",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E5%AF%8C%E5%B6%BD%E4%B8%89%E5%8D%81%E5%85%AD%E6%99%AF-123740",
+        "locator": "見出し「富嶽三十六景 （読み）フガクサンジュウロッケイ」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "03ed4232a5ae4b3203dabb48f535b0f4c14e46e8eee323ad55fd48ce365da378"
+      }
+    },
+    {
+      "ID": "Q002207",
+      "answer": "内村光良",
+      "before": "うちむらみつよし",
+      "after": "うちむらてるよし",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E5%86%85%E6%9D%91%E5%85%89%E8%89%AF-1799471",
+        "locator": "見出し「内村光良 （読み）うちむら てるよし」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "11988b86d5208f69f25e0e458320066516c4bee3b3d65ba8f3ed156985f364f4"
+      }
+    },
+    {
+      "ID": "Q002228",
+      "answer": "衣替え",
+      "before": "ころもかえ",
+      "after": "ころもがえ",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E8%A1%A3%E6%9B%BF%E3%81%88-505641",
+        "locator": "見出し「衣替え （読み）コロモガエ」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "c3c4ebe870c537806365d11395c21ed02142810728d4425cb0b98a49f76f89f0"
+      }
+    },
+    {
+      "ID": "Q002247",
+      "answer": "壬生寺",
+      "before": "みぶてら",
+      "after": "みぶでら",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E5%A3%AC%E7%94%9F%E5%AF%BA-139395",
+        "locator": "見出し「壬生寺 （読み）ミブデラ」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "d7504bd6339cb6ff3e33a840327b8ad6f42b8425381241ff2a4c5c1174229718"
+      }
+    },
+    {
+      "ID": "Q002259",
+      "answer": "当麻蹴速",
+      "before": "とうましゅうそく",
+      "after": "たいまのけはや",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E5%BD%93%E9%BA%BB%E8%B9%B4%E9%80%9F-558426",
+        "locator": "見出し「当麻蹴速 （読み）タイマノケハヤ」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "c8e1143a398757fd0f25b55397711ec42eb9bae58a3e832492d28d3e60cecaac"
+      }
+    },
+    {
+      "ID": "Q002347",
+      "answer": "寿福寺",
+      "before": "じゅふくてら",
+      "after": "じゅふくじ",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E5%AF%BF%E7%A6%8F%E5%AF%BA-529281",
+        "locator": "見出し「寿福寺 （読み）ジュフクジ」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "99245f2a8ff6563524248e4aa119f626f108c6e1cbd0a8a94683b42abe7ad2e8"
+      }
+    },
+    {
+      "ID": "Q002380",
+      "answer": "十三湖",
+      "before": "じゅうさんみずうみ",
+      "after": "じゅうさんこ",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E5%8D%81%E4%B8%89%E6%B9%96-76988",
+        "locator": "見出し「十三湖 （読み）ジュウサンコ」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "f20df56042547e5ebf01f7be64b9f0500ebb10cdf2d1404feb6bc27b84e615b3"
+      }
+    },
+    {
+      "ID": "Q002382",
+      "answer": "宇治十帖",
+      "before": "うじじゅうちょう",
+      "after": "うじじゅうじょう",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E5%AE%87%E6%B2%BB%E5%8D%81%E5%B8%96-439580",
+        "locator": "見出し「宇治十帖 （読み）ウジジュウジョウ」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "7076efb7084bc62f28234622cab9a9c95dc786ad10083a5097d063755cfd6d78"
+      }
+    },
+    {
+      "ID": "Q002398",
+      "answer": "藤原公任",
+      "before": "ふじわらきんとう",
+      "after": "ふじわらのきんとう",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E8%97%A4%E5%8E%9F%E5%85%AC%E4%BB%BB-15074",
+        "locator": "見出し「藤原公任 （読み）フジワラノキントウ」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "584cefdd59ddef467f8fef3253a0d232ecba4542fc3608ee31e164924fd3aa32"
+      }
+    },
+    {
+      "ID": "Q002399",
+      "answer": "三井高利",
+      "before": "みついこうり",
+      "after": "みついたかとし",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E4%B8%89%E4%BA%95%E9%AB%98%E5%88%A9-138823",
+        "locator": "見出し「三井高利 （読み）ミツイタカトシ」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "aa9fedc3cb0915c846bf576302ba590f26fca103f6be92e1ede011fd653abff2"
+      }
+    },
+    {
+      "ID": "Q002417",
+      "answer": "新村出",
+      "before": "にいむらしゅつ",
+      "after": "しんむらいずる",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E6%96%B0%E6%9D%91%E5%87%BA-18411",
+        "locator": "見出し「新村出 （読み）シンムライズル」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "673a948c82a39b1cb12a1fd52597d5cebd88b67b70e71669dc70860b177e014c"
+      }
+    },
+    {
+      "ID": "Q002480",
+      "answer": "婚姻色",
+      "before": "こんいんいろ",
+      "after": "こんいんしょく",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E5%A9%9A%E5%A7%BB%E8%89%B2-67116",
+        "locator": "見出し「婚姻色 （読み）コンインショク （その他表記）nuptial coloration」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "10d41ac8dfacff906c80b3c4397d93dbf393e66f236695181cff2a888707c881"
+      }
+    },
+    {
+      "ID": "Q002487",
+      "answer": "三白眼",
+      "before": "さんはくがん",
+      "after": "さんぱくがん",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E4%B8%89%E7%99%BD%E7%9C%BC-514593",
+        "locator": "見出し「三白眼 （読み）サンパクガン」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "2b055a08ac451eee0344774cc5c45c6ce74d140028cb1223352c127a0dc60fd1"
+      }
+    },
+    {
+      "ID": "Q002488",
+      "answer": "乾燥帯",
+      "before": "かんそうおび",
+      "after": "かんそうたい",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E4%B9%BE%E7%87%A5%E5%B8%AF-677346",
+        "locator": "見出し「乾燥帯 （読み）カンソウタイ （その他表記）arid zone」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "e9a8f8283dc1de92b3a3630960403ef6cadfb8b129358fc1f604e64f7a89924a"
+      }
+    },
+    {
+      "ID": "Q002501",
+      "answer": "岸部一徳",
+      "before": "きしべもとのり",
+      "after": "きしべいっとく",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E5%B2%B8%E9%83%A8%E4%B8%80%E5%BE%B3-1784022",
+        "locator": "見出し「岸部一徳 （読み）きしべ いっとく」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "b188c82c7e979ab039a3a72a46228802a013db0ae47056b4739f1da6df0ca4bb"
+      }
+    },
+    {
+      "ID": "Q002525",
+      "answer": "十津川村",
+      "before": "とつがわむら",
+      "after": "とつかわむら",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E5%8D%81%E6%B4%A5%E5%B7%9D%E6%9D%91-105340",
+        "locator": "見出し「十津川村 （読み）とつかわむら」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "19c3359dd801c90a029d9d44b49912105914ad1c581951537b116868ec0303eb"
+      }
+    },
+    {
+      "ID": "Q002543",
+      "answer": "乗鞍岳",
+      "before": "のりくらがく",
+      "after": "のりくらだけ",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E4%B9%97%E9%9E%8D%E5%B2%B3-112516",
+        "locator": "見出し「乗鞍岳 （読み）ノリクラダケ」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "f5274112fa1683bc80f032b60fd1bae4a995231c368e11aef42037aaea58f949"
+      }
+    },
+    {
+      "ID": "Q002545",
+      "answer": "七里ヶ浜",
+      "before": "しちりゖはま",
+      "after": "しちりがはま",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E4%B8%83%E9%87%8C%E3%83%B6%E6%B5%9C-73926",
+        "locator": "見出し「七里ヶ浜 （読み）シチリガハマ」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "632d8d05878d21d19ecad877190935be9950fa542653a78fc4368872d38ed7f6"
+      }
+    },
+    {
+      "ID": "Q002561",
+      "answer": "お市の方",
+      "before": "おしのほう",
+      "after": "おいちのかた",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E3%81%8A%E5%B8%82%E3%81%AE%E6%96%B9-448505",
+        "locator": "見出し「お市の方 （読み）オイチノカタ」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "c872b0279825c8aff524ef1e2e413e86800fa9f2d5ac1e342eb0be1131f333b1"
+      }
+    },
+    {
+      "ID": "Q002576",
+      "answer": "万国旗",
+      "before": "ばんこくはた",
+      "after": "ばんこくき",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E4%B8%87%E5%9B%BD%E6%97%97-606372",
+        "locator": "見出し「万国旗 （読み）バンコクキ」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "775645952aac48cd37c267867ff896f1b3284c74fbc8d6459c174f6848c58c57"
+      }
+    },
+    {
+      "ID": "Q002600",
+      "answer": "替え玉",
+      "before": "かえたま",
+      "after": "かえだま",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E6%9B%BF%E3%81%88%E7%8E%89-1494460",
+        "locator": "見出し「替え玉 （読み）かえだま」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "34821fb4e89604a14dab5131d7ab86dd11737a2ce8fbd4ff487ee1efdb0e6889"
+      }
+    },
+    {
+      "ID": "Q002651",
+      "answer": "食物繊維",
+      "before": "たべものせんい",
+      "after": "しょくもつせんい",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E9%A3%9F%E7%89%A9%E7%B9%8A%E7%B6%AD-155002",
+        "locator": "見出し「食物繊維 （読み）ショクモツセンイ」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "468268bc0ed2557156d58610c09589c7c4f75da35a3d571ea2eb39450a3ffaa2"
+      }
+    },
+    {
+      "ID": "Q002763",
+      "answer": "藤原道長",
+      "before": "ふじわらどうちょう",
+      "after": "ふじわらのみちなが",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E8%97%A4%E5%8E%9F%E9%81%93%E9%95%B7-124699",
+        "locator": "見出し「藤原道長 （読み）フジワラノミチナガ」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "12d1db3bb6808d2a4095948bd046dd0b6d114932d78ce5ae8ee22412d0904428"
+      }
+    },
+    {
+      "ID": "Q002768",
+      "answer": "離島",
+      "before": "りしま",
+      "after": "りとう",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E9%9B%A2%E5%B3%B6-149110",
+        "locator": "見出し「離島 （読み）リトウ」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "fc10f7e1d507fe9ebdcb108d26441ff7e374550bc27a8df7c2f2d21178e6c48c"
+      }
+    },
+    {
+      "ID": "Q002800",
+      "answer": "枯山水",
+      "before": "かれやまみず",
+      "after": "かれさんすい",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E6%9E%AF%E5%B1%B1%E6%B0%B4-48026",
+        "locator": "見出し「枯山水 （読み）カレサンスイ」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "7eaa4cf2cd8719e986380e989e739da09289b16e1c1871a3ae84f94e1652cb62"
+      }
+    },
+    {
+      "ID": "Q002857",
+      "answer": "水無月",
+      "before": "みなつき",
+      "after": "みなづき",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E6%B0%B4%E7%84%A1%E6%9C%88-639070",
+        "locator": "見出し「水無月 （読み）ミナヅキ」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "e62cee3df4e307c59b5d596eacce56197bdd9b2ce3949ad5ddad161791738077"
+      }
+    },
+    {
+      "ID": "Q002869",
+      "answer": "海の日",
+      "before": "うみのにち",
+      "after": "うみのひ",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E6%B5%B7%E3%81%AE%E6%97%A5-172803",
+        "locator": "見出し「海の日 （読み）ウミノヒ」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "f71368020acceca578aec4d5fb1cfa8964dd18a06711bd016e126b50830bd7b0"
+      }
+    },
+    {
+      "ID": "Q002892",
+      "answer": "鹿児島県",
+      "before": "かこしまけん",
+      "after": "かごしまけん",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E9%B9%BF%E5%85%90%E5%B3%B6%E7%9C%8C-44026",
+        "locator": "見出し「鹿児島県 （読み）カゴシマケン」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "2a8102c4d85bcc81dfb0b30aeae3502bb00d12227d19741ac02ba110ee77279f"
+      }
+    },
+    {
+      "ID": "Q002926",
+      "answer": "綱引き",
+      "before": "つなひきき",
+      "after": "つなひき",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E7%B6%B1%E5%BC%95%E3%81%8D-99347",
+        "locator": "見出し「綱引き （読み）ツナヒキ」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "552bd17b5db519bf3be156932850106d7f7453d64960eec76318211e6ad7cd96"
+      }
+    },
+    {
+      "ID": "Q002929",
+      "answer": "近代五種競技",
+      "before": "きんだいごたねきょうぎ",
+      "after": "きんだいごしゅきょうぎ",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E8%BF%91%E4%BB%A3%E4%BA%94%E7%A8%AE%E7%AB%B6%E6%8A%80-54345",
+        "locator": "見出し「近代五種競技 （読み）キンダイゴシュキョウギ （その他表記）modern pentathlon」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "8b536f3b2dd666af8d7d01af6bb71ddd892611d7ddb32343e353e60efc3d03c1"
+      }
+    },
+    {
+      "ID": "Q002998",
+      "answer": "佐田岬半島",
+      "before": "さだみさきはんしま",
+      "after": "さだみさきはんとう",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E4%BD%90%E7%94%B0%E5%B2%AC%E5%8D%8A%E5%B3%B6-69109",
+        "locator": "見出し「佐田岬半島 （読み）サダミサキハントウ」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "119b69203d7bfd7dcf7e8813860fc3a16382c9b7437e6d3aa81bc8af0d8178b3"
+      }
+    },
+    {
+      "ID": "Q003005",
+      "answer": "霊巌洞",
+      "before": "れいがんほら",
+      "after": "れいがんどう",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E9%9C%8A%E5%B7%8C%E6%B4%9E-1438717",
+        "locator": "見出し「霊巌洞 （読み）れいがんどう」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "fc5f8db499e547ca19e8fc030998d13627cd104c45f56c354fa543a0f123d609"
+      }
+    },
+    {
+      "ID": "Q003008",
+      "answer": "無量大数",
+      "before": "むりょうだいすう",
+      "after": "むりょうたいすう",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E7%84%A1%E9%87%8F%E5%A4%A7%E6%95%B0-642568",
+        "locator": "見出し「無量大数 （読み）ムリョウタイスウ」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "d56f523b31c4d045134863dcbb9c7340302396848a4932c3a5ead7f683a09311"
+      }
+    },
+    {
+      "ID": "Q003049",
+      "answer": "北斗七星",
+      "before": "ほくとななえ",
+      "after": "ほくとしちせい",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E5%8C%97%E6%96%97%E4%B8%83%E6%98%9F-132769",
+        "locator": "見出し「北斗七星 （読み）ホクトシチセイ」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "ed08a1a664f80aacae76153a4a283a93d4eba651e31bb1e55b77b1cf33fc0a2b"
+      }
+    },
+    {
+      "ID": "Q003081",
+      "answer": "宮古島",
+      "before": "みやこしま",
+      "after": "みやこじま",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E5%AE%AE%E5%8F%A4%E5%B3%B6-139541",
+        "locator": "見出し「宮古島 （読み）ミヤコジマ」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "f0afbb3d97b656efe923c29470d2094ac0c095807154101ac9d26db86b398ae5"
+      }
+    },
+    {
+      "ID": "Q003100",
+      "answer": "徳川家継",
+      "before": "とくがわけけい",
+      "after": "とくがわいえつぐ",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E5%BE%B3%E5%B7%9D%E5%AE%B6%E7%B6%99-104679",
+        "locator": "見出し「徳川家継 （読み）トクガワイエツグ」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "267bfa9c981ea98a1f8dac3a79168a41695635fb980d6ecd9ba46b5476579dfe"
+      }
+    },
+    {
+      "ID": "Q003101",
+      "answer": "平重盛",
+      "before": "たいらしげもり",
+      "after": "たいらのしげもり",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E5%B9%B3%E9%87%8D%E7%9B%9B-92215",
+        "locator": "見出し「平重盛 （読み）タイラノシゲモリ」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "5ad2a625a0b2cfa2ac6895ed14debfd047f8a43e6ef2d0b7cde3860b91df6c6c"
+      }
+    },
+    {
+      "ID": "Q003138",
+      "answer": "大向う",
+      "before": "おおむかいう",
+      "after": "おおむこう",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E5%A4%A7%E5%90%91%E3%81%86-39605",
+        "locator": "見出し「大向う （読み）おおむこう」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "d95da8f2d21b30cf7a32384b9380d644c196bdf09e8a15b4e5be73917dafbe8a"
+      }
+    },
+    {
+      "ID": "Q003187",
+      "answer": "伊集院静",
+      "before": "いじゅういんせい",
+      "after": "いじゅういんしずか",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E4%BC%8A%E9%9B%86%E9%99%A2%E9%9D%99-432291",
+        "locator": "見出し「伊集院静 （読み）イジュウインシズカ」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "236b1227da08c3b24da7278c0eb26fb32b2a4e3dcf8f251ab1e650730a500aa0"
+      }
+    },
+    {
+      "ID": "Q003206",
+      "answer": "あだち充",
+      "before": "あだちじゅう",
+      "after": "あだちみつる",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E3%81%82%E3%81%A0%E3%81%A1%E5%85%85-425224",
+        "locator": "見出し「あだち充 （読み）アダチミツル」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "e8d12b5a3b388313ac2a583cd9218145d0e2ae58a8b8d0f8d0b73327b5bab652"
+      }
+    },
+    {
+      "ID": "Q003238",
+      "answer": "心中天網島",
+      "before": "しんじゅうてんもうしま",
+      "after": "しんじゅうてんのあみじま",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E5%BF%83%E4%B8%AD%E5%A4%A9%E7%B6%B2%E5%B3%B6-714703",
+        "locator": "見出し「心中天網島 （読み）しんじゅうてんのあみじま」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "0c90b90473ea6cffcdbd75119ae56d2e4547437e46abeae7ab4f2fd7ff96cfbe"
+      }
+    },
+    {
+      "ID": "Q003256",
+      "answer": "非核三原則",
+      "before": "ひかくみはらのり",
+      "after": "ひかくさんげんそく",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E9%9D%9E%E6%A0%B8%E4%B8%89%E5%8E%9F%E5%89%87-119033",
+        "locator": "見出し「非核三原則 （読み）ヒカクサンゲンソク」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "dc9d00462384a0e332967c584ddedb5d9f102958283d7e29c43640be7f9dd449"
+      }
+    },
+    {
+      "ID": "Q003281",
+      "answer": "秋芳洞",
+      "before": "しゅうほうどう",
+      "after": "あきよしどう",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E7%A7%8B%E8%8A%B3%E6%B4%9E-24626",
+        "locator": "見出し「秋芳洞 （読み）アキヨシドウ」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "89cc08608d4eebbd4684ed56b0122bbb9bec21eb69e7e79577b8401ef16c4efb"
+      }
+    },
+    {
+      "ID": "Q003351",
+      "answer": "慈照寺",
+      "before": "じしょうてら",
+      "after": "じしょうじ",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E6%85%88%E7%85%A7%E5%AF%BA-73355",
+        "locator": "見出し「慈照寺 （読み）ジショウジ」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "7f3fd1961b0f84117ef2438b9b26534577f941509b72d722cc84962158883b0d"
+      }
+    },
+    {
+      "ID": "Q003423",
+      "answer": "羽生結弦",
+      "before": "はにゅうけつげん",
+      "after": "はにゅうゆづる",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E7%BE%BD%E7%94%9F%E7%B5%90%E5%BC%A6-189664",
+        "locator": "見出し「羽生結弦 （読み）ハニュウユヅル」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "8a86ec1ca6101168f5c6842075594d0c1f739d42f4f0a25d30d572508326ce58"
+      }
+    },
+    {
+      "ID": "Q003520",
+      "answer": "けん玉",
+      "before": "けんたま",
+      "after": "けんだま",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E3%81%91%E3%82%93%E7%8E%89-899694",
+        "locator": "見出し「けん玉 （読み）けんだま」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "20bde908b7adc8cabded14bb08d6c8712f82a9715e39d4f71c82bf7b86e01f51"
+      }
+    },
+    {
+      "ID": "Q003528",
+      "answer": "堀内健",
+      "before": "ほりうちたけし",
+      "after": "ほりうちけん",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E5%A0%80%E5%86%85%E5%81%A5-1809626",
+        "locator": "見出し「堀内健 （読み）ほりうち けん」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "d144271cac05638e9b141ed008ad8ec682c2f5812b383ee947b2341dc376a45a"
+      }
+    },
+    {
+      "ID": "Q003537",
+      "answer": "冠番組",
+      "before": "かんばんぐみ",
+      "after": "かんむりばんぐみ",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E5%86%A0%E7%95%AA%E7%B5%84-471559",
+        "locator": "見出し「冠番組 （読み）カンムリバングミ」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "77cc61111f42fa107118bccf6a5d90159bf21872fe004f17d28157b1f0018da3"
+      }
+    },
+    {
+      "ID": "Q003576",
+      "answer": "面取り",
+      "before": "めんとりり",
+      "after": "めんとり",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E9%9D%A2%E5%8F%96%E3%82%8A-644677",
+        "locator": "見出し「面取り （読み）メントリ」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "7e3750f97900802e4eca4eacbf0c5c3db11485e368fcc32e94ab24296f856410"
+      }
+    },
+    {
+      "ID": "Q003580",
+      "answer": "目安箱",
+      "before": "めやすはこ",
+      "after": "めやすばこ",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E7%9B%AE%E5%AE%89%E7%AE%B1-141688",
+        "locator": "見出し「目安箱 （読み）メヤスバコ」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "d27443f6f17193c24a8000cec228047e391041915f11d5e711506c910d89e352"
+      }
+    },
+    {
+      "ID": "Q003597",
+      "answer": "無洗米",
+      "before": "むせんこめ",
+      "after": "むせんまい",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E7%84%A1%E6%B4%97%E7%B1%B3-155001",
+        "locator": "見出し「無洗米 （読み）ムセンマイ」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "9c00f59fba23f7911e82064806f85bf87784cbbd5cd73ca0148ad3f46e4cc97d"
+      }
+    },
+    {
+      "ID": "Q003632",
+      "answer": "千社札",
+      "before": "せんしゃさつ",
+      "after": "せんじゃふだ",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E5%8D%83%E7%A4%BE%E6%9C%AD-550090",
+        "locator": "見出し「千社札 （読み）センジャフダ」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "8b074bd7934b8204476730d14f197fca4015560b79d740d3bf978dc124a94390"
+      }
+    },
+    {
+      "ID": "Q003634",
+      "answer": "休肝日",
+      "before": "きゅうかんにち",
+      "after": "きゅうかんび",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E4%BC%91%E8%82%9D%E6%97%A5-476689",
+        "locator": "見出し「休肝日 （読み）キュウカンビ」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "7c2af95777061e6ddcc25144cf63dec14d5fd05fb0d4dd3f75b2fb250921ba3c"
+      }
+    },
+    {
+      "ID": "Q003642",
+      "answer": "安宅の関",
+      "before": "あんたくのかん",
+      "after": "あたかのせき",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E5%AE%89%E5%AE%85%E3%81%AE%E9%96%A2-425167",
+        "locator": "見出し「安宅の関 （読み）アタカノセキ」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "87f28dfdf05416c483f79fcb6921ec0f9028145345405741ea78895408e08889"
+      }
+    },
+    {
+      "ID": "Q003653",
+      "answer": "徳川家治",
+      "before": "とくがわけおさむ",
+      "after": "とくがわいえはる",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E5%BE%B3%E5%B7%9D%E5%AE%B6%E6%B2%BB-19079",
+        "locator": "見出し「徳川家治 （読み）トクガワイエハル」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "d97e362804a56daa21f1e58ed4af8f431a18ebcc7df6e4079f8b56ff285ff385"
+      }
+    },
+    {
+      "ID": "Q003763",
+      "answer": "伊藤博文",
+      "before": "いとうひろふみ",
+      "after": "いとうひろぶみ",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E4%BC%8A%E8%97%A4%E5%8D%9A%E6%96%87-15413",
+        "locator": "見出し「伊藤博文 （読み）イトウヒロブミ」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "30d6626c4dbb0c30b0ee24494da98c64012d49005fdb391c696692283f9f2174"
+      }
+    },
+    {
+      "ID": "Q003840",
+      "answer": "面取り",
+      "before": "めんとりり",
+      "after": "めんとり",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E9%9D%A2%E5%8F%96%E3%82%8A-644677",
+        "locator": "見出し「面取り （読み）メントリ」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "7e3750f97900802e4eca4eacbf0c5c3db11485e368fcc32e94ab24296f856410"
+      }
+    },
+    {
+      "ID": "Q003849",
+      "answer": "日本国有鉄道",
+      "before": "にほんこくありてつどう",
+      "after": "にほんこくゆうてつどう",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E6%97%A5%E6%9C%AC%E5%9B%BD%E6%9C%89%E9%89%84%E9%81%93-110164",
+        "locator": "見出し「日本国有鉄道 （読み）ニホンコクユウテツドウ」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "430065cfe233619e6242e3eb1a23b1cae49f4922cc5df90e7ec5cc0a4588820d"
+      }
+    },
+    {
+      "ID": "Q003853",
+      "answer": "徳川家達",
+      "before": "とくがわけとおる",
+      "after": "とくがわいえさと",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E5%BE%B3%E5%B7%9D%E5%AE%B6%E9%81%94-19076",
+        "locator": "見出し「徳川家達 （読み）トクガワイエサト」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "8558aee75638b7216909452ba0ff9dd25fe44d5253a2ef67abd731debf6cb1a5"
+      }
+    },
+    {
+      "ID": "Q003867",
+      "answer": "平城京",
+      "before": "ならきょう",
+      "after": "へいじょうきょう",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E5%B9%B3%E5%9F%8E%E4%BA%AC-128958",
+        "locator": "見出し「平城京 （読み）ヘイジョウキョウ」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "cd5196ea3054a77071a32e43401a5f873704a7941be5b16c9cdb89bf418c1f08"
+      }
+    },
+    {
+      "ID": "Q003873",
+      "answer": "どんでん返し",
+      "before": "どんでんかえし",
+      "after": "どんでんがえし",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E3%81%A9%E3%82%93%E3%81%A7%E3%82%93%E8%BF%94%E3%81%97-586766",
+        "locator": "見出し「どんでん返し （読み）ドンデンガエシ」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "6cb229cb14117dd028a4e9d927eeecc63cc43a8919a288e900485d07d2a72ba7"
+      }
+    },
+    {
+      "ID": "Q003893",
+      "answer": "千と千尋の神隠し",
+      "before": "せんとせんじんのかみかくし",
+      "after": "せんとちひろのかみかくし",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E5%8D%83%E3%81%A8%E5%8D%83%E5%B0%8B%E3%81%AE%E7%A5%9E%E9%9A%A0%E3%81%97-1555384",
+        "locator": "見出し「千と千尋の神隠し （読み）せんとちひろのかみかくし」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "3db37daa9db5907e1521e7a1428ac8da3ba50f28ec8fa9e9f20988d1024986c0"
+      }
+    },
+    {
+      "ID": "Q004016",
+      "answer": "大赤斑",
+      "before": "おおあかはん",
+      "after": "だいせきはん",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E5%A4%A7%E8%B5%A4%E6%96%91-557621",
+        "locator": "見出し「大赤斑 （読み）ダイセキハン」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "9e6cd6d2354d80c9c9422894e3b2c359ef3b1bda11a44bbfe5ff3ffb49dd6f41"
+      }
+    },
+    {
+      "ID": "Q004035",
+      "answer": "前説",
+      "before": "まえぜつ",
+      "after": "まえせつ",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E5%89%8D%E8%AA%AC-550408",
+        "locator": "見出し「前説 （読み）マエセツ」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "16a90234c263f178a6e7359cce18d88238e38965410eaf92fbc026c0157f0c3c"
+      }
+    },
+    {
+      "ID": "Q004042",
+      "answer": "冬虫夏草",
+      "before": "とうちゅうなつくさ",
+      "after": "とうちゅうかそう",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E5%86%AC%E8%99%AB%E5%A4%8F%E8%8D%89-103897",
+        "locator": "見出し「冬虫夏草 （読み）トウチュウカソウ」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "bf716aae5778c1097289efb143bf193d87cc18ed97f37741488278e0da3bdbe8"
+      }
+    },
+    {
+      "ID": "Q004049",
+      "answer": "走高跳",
+      "before": "そうたかとび",
+      "after": "はしりたかとび",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E8%B5%B0%E9%AB%98%E8%B7%B3-2074360",
+        "locator": "見出し「走高跳 （読み）はしりたかとび」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "5c13a6ba988f1685495a32ea04a1761f3c7d411ace26778f285362da1c9be387"
+      }
+    },
+    {
+      "ID": "Q004075",
+      "answer": "将棋倒し",
+      "before": "しょうぎたおし",
+      "after": "しょうぎだおし",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E5%B0%86%E6%A3%8B%E5%80%92%E3%81%97-531049",
+        "locator": "見出し「将棋倒し （読み）ショウギダオシ」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "ee36c696d4b98b24fb5258c4a1a493932ab958983b5bf8b4721fa970fa4b2891"
+      }
+    },
+    {
+      "ID": "Q004081",
+      "answer": "五人組",
+      "before": "ごにんくみ",
+      "after": "ごにんぐみ",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E4%BA%94%E4%BA%BA%E7%B5%84-65696",
+        "locator": "見出し「五人組 （読み）ゴニングミ」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "a6ef90aeeee9ab44fa3b98e01f5c547d10cc720c48365c174b8212db36b9aab6"
+      }
+    },
+    {
+      "ID": "Q004126",
+      "answer": "人差し指",
+      "before": "ひとさししゆび",
+      "after": "ひとさしゆび",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E4%BA%BA%E5%B7%AE%E3%81%97%E6%8C%87-2077780",
+        "locator": "見出し「人差し指 （読み）ひとさしゆび」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "16056d624707e4931b642f094dc316cbe8593ba7cc9def0d3512d764177da1d3"
+      }
+    },
+    {
+      "ID": "Q004179",
+      "answer": "源義経",
+      "before": "みなもとよしつね",
+      "after": "みなもとのよしつね",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E6%BA%90%E7%BE%A9%E7%B5%8C-139234",
+        "locator": "見出し「源義経 （読み）ミナモトノヨシツネ」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "72d6000f1b2dbdc4beda238a82ca18f910888e4b2511993ae8da2480fec4f868"
+      }
+    },
+    {
+      "ID": "Q004198",
+      "answer": "辻村深月",
+      "before": "つじむらみずき",
+      "after": "つじむらみづき",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E8%BE%BB%E6%9D%91%E6%B7%B1%E6%9C%88-189954",
+        "locator": "見出し「辻村深月 （読み）ツジムラミヅキ」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "77bcbfb2129c4ba14b159bf180c5a1dea73665dfd7b7b64fbe9504ab91dbb21d"
+      }
+    },
+    {
+      "ID": "Q004199",
+      "answer": "空手道",
+      "before": "からてみち",
+      "after": "からてどう",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E7%A9%BA%E6%89%8B%E9%81%93-2131845",
+        "locator": "見出し「空手道 （読み）カラテドウ」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "c88dc648c48353ca1fff0cfce52b7b954c2d6bfa88c73269c6291dba6c81e449"
+      }
+    },
+    {
+      "ID": "Q004233",
+      "answer": "徳川家慶",
+      "before": "とくがわけよし",
+      "after": "とくがわいえよし",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E5%BE%B3%E5%B7%9D%E5%AE%B6%E6%85%B6-19083",
+        "locator": "見出し「徳川家慶 （読み）トクガワイエヨシ」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "366a9b646f063db9e3137998f68ba690a21adf6852303575ef6899d912420856"
+      }
+    },
+    {
+      "ID": "Q004257",
+      "answer": "全粒粉",
+      "before": "ぜんりゅうこな",
+      "after": "ぜんりゅうふん",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E5%85%A8%E7%B2%92%E7%B2%89-551483",
+        "locator": "見出し「全粒粉 （読み）ゼンリュウフン」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "4459f7a63935831286698d6fb337a7b7f42e98c2862583a103e258bbb8f62bc3"
+      }
+    },
+    {
+      "ID": "Q004261",
+      "answer": "ふみの日",
+      "before": "ふみのにち",
+      "after": "ふみのひ",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E3%81%B5%E3%81%BF%E3%81%AE%E6%97%A5-735069",
+        "locator": "見出し「ふみの日 （読み）フミノヒ」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "df37da80edeee3f6093a9b060ed6ca9a04709a419dbde976824d8fbe9504e22b"
+      }
+    },
+    {
+      "ID": "Q004420",
+      "answer": "尚巴志王",
+      "before": "たかしはしおう",
+      "after": "しょうはしおう",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E5%B0%9A%E5%B7%B4%E5%BF%97%E7%8E%8B-1082559",
+        "locator": "見出し「尚巴志王 （読み）しょうはしおう」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "1803b1c1893c30d3398a8d58dc74f711f82d0b2cf0fe12893bd6249da66ed7f8"
+      }
+    },
+    {
+      "ID": "Q004436",
+      "answer": "園子温",
+      "before": "そのこおん",
+      "after": "そのしおん",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E5%9C%92%E5%AD%90%E6%B8%A9-191337",
+        "locator": "見出し「園子温 （読み）その しおん」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "82acb6817e72afeff0e6c7a6d731f95d3db2ec6fde090274a1112a04a6686ffe"
+      }
+    },
+    {
+      "ID": "Q004456",
+      "answer": "大窪寺",
+      "before": "おおくぼてら",
+      "after": "おおくぼじ",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E5%A4%A7%E7%AA%AA%E5%AF%BA-674556",
+        "locator": "見出し「大窪寺 （読み）オオクボジ」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "0430fd98679233aa171333cb9c00c8348c31a47e51924e35cfc5dd58cf23211b"
+      }
+    },
+    {
+      "ID": "Q004463",
+      "answer": "杜子春",
+      "before": "もりししゅん",
+      "after": "とししゅん",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E6%9D%9C%E5%AD%90%E6%98%A5-1996798",
+        "locator": "見出し「杜子春 （読み）トシシュン」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "7a23791ca7c349b6d83b353971721202927547b499d4ea312995b87556fec359"
+      }
+    },
+    {
+      "ID": "Q004478",
+      "answer": "寄木細工",
+      "before": "よせぎさいく",
+      "after": "よせぎざいく",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E5%AF%84%E6%9C%A8%E7%B4%B0%E5%B7%A5-654382",
+        "locator": "見出し「寄木細工 （読み）ヨセギザイク」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "aa1147e6b3c62917a0faf63f3f3fc654c3ef4f25e546437489a5ecb06ab1576e"
+      }
+    },
+    {
+      "ID": "Q004623",
+      "answer": "大洋島",
+      "before": "たいようしま",
+      "after": "たいようとう",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E5%A4%A7%E6%B4%8B%E5%B3%B6-558646",
+        "locator": "見出し「大洋島 （読み）タイヨウトウ」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "f720faa27fd6aaa6f3de55db9b9417090e86a61a84d5a926376f2e4c52702876"
+      }
+    },
+    {
+      "ID": "Q004740",
+      "answer": "右翼手",
+      "before": "うよくて",
+      "after": "うよくしゅ",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E5%8F%B3%E7%BF%BC%E6%89%8B-441704",
+        "locator": "見出し「右翼手 （読み）ウヨクシュ」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "9a6920acef639648e431c3e7c3bfc64b95b6db0afa83e190805dd6c3ffd70153"
+      }
+    },
+    {
+      "ID": "Q004741",
+      "answer": "右翼手",
+      "before": "うよくて",
+      "after": "うよくしゅ",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E5%8F%B3%E7%BF%BC%E6%89%8B-441704",
+        "locator": "見出し「右翼手 （読み）ウヨクシュ」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "9a6920acef639648e431c3e7c3bfc64b95b6db0afa83e190805dd6c3ffd70153"
+      }
+    },
+    {
+      "ID": "Q004744",
+      "answer": "国司",
+      "before": "くにじ",
+      "after": "こくし",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E5%9B%BD%E5%8F%B8-55734",
+        "locator": "見出し「国司 （読み）コクシ」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "1e0c84d196669c94bdc9131c985527d22146dcd47a9cd4e76af8fb5da7fd9e05"
+      }
+    },
+    {
+      "ID": "Q004745",
+      "answer": "国司",
+      "before": "くにじ",
+      "after": "こくし",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E5%9B%BD%E5%8F%B8-55734",
+        "locator": "見出し「国司 （読み）コクシ」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "1e0c84d196669c94bdc9131c985527d22146dcd47a9cd4e76af8fb5da7fd9e05"
+      }
+    },
+    {
+      "ID": "Q004755",
+      "answer": "国司",
+      "before": "くにじ",
+      "after": "こくし",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E5%9B%BD%E5%8F%B8-55734",
+        "locator": "見出し「国司 （読み）コクシ」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "1e0c84d196669c94bdc9131c985527d22146dcd47a9cd4e76af8fb5da7fd9e05"
+      }
+    },
+    {
+      "ID": "Q004756",
+      "answer": "国司",
+      "before": "くにじ",
+      "after": "こくし",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E5%9B%BD%E5%8F%B8-55734",
+        "locator": "見出し「国司 （読み）コクシ」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "1e0c84d196669c94bdc9131c985527d22146dcd47a9cd4e76af8fb5da7fd9e05"
+      }
+    },
+    {
+      "ID": "Q004853",
+      "answer": "座敷童子",
+      "before": "ざしきわらしこ",
+      "after": "ざしきわらし",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E5%BA%A7%E6%95%B7%E7%AB%A5%E5%AD%90-837716",
+        "locator": "見出し「座敷童子 （読み）ざしきわらし」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "8aefbf8b4726daa16df1d786cd71491961b54cea6cd9f32ca1900e248dfc6ff6"
+      }
+    },
+    {
+      "ID": "Q004854",
+      "answer": "座敷童子",
+      "before": "ざしきわらしこ",
+      "after": "ざしきわらし",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E5%BA%A7%E6%95%B7%E7%AB%A5%E5%AD%90-837716",
+        "locator": "見出し「座敷童子 （読み）ざしきわらし」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "8aefbf8b4726daa16df1d786cd71491961b54cea6cd9f32ca1900e248dfc6ff6"
+      }
+    },
+    {
+      "ID": "Q004855",
+      "answer": "座敷童子",
+      "before": "ざしきわらしこ",
+      "after": "ざしきわらし",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E5%BA%A7%E6%95%B7%E7%AB%A5%E5%AD%90-837716",
+        "locator": "見出し「座敷童子 （読み）ざしきわらし」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "8aefbf8b4726daa16df1d786cd71491961b54cea6cd9f32ca1900e248dfc6ff6"
+      }
+    },
+    {
+      "ID": "Q005033",
+      "answer": "青銅器時代",
+      "before": "せいどううつわじだい",
+      "after": "せいどうきじだい",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E9%9D%92%E9%8A%85%E5%99%A8%E6%99%82%E4%BB%A3-86282",
+        "locator": "見出し「青銅器時代 （読み）セイドウキジダイ」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "b000877b89b7a673f7f8a7635abeede4195b88aa784e656100d822121e2eb25e"
+      }
+    },
+    {
+      "ID": "Q005034",
+      "answer": "青銅器時代",
+      "before": "せいどううつわじだい",
+      "after": "せいどうきじだい",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E9%9D%92%E9%8A%85%E5%99%A8%E6%99%82%E4%BB%A3-86282",
+        "locator": "見出し「青銅器時代 （読み）セイドウキジダイ」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "b000877b89b7a673f7f8a7635abeede4195b88aa784e656100d822121e2eb25e"
+      }
+    },
+    {
+      "ID": "Q005182",
+      "answer": "費用対効果",
+      "before": "ひようついこうか",
+      "after": "ひようたいこうか",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E8%B2%BB%E7%94%A8%E5%AF%BE%E5%8A%B9%E6%9E%9C-178674",
+        "locator": "見出し「費用対効果 （読み）ヒヨウタイコウカ」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "9f6f84a0cdc2f661aa2d19176170d20ed34ad3532697a144b2817213aad0d3d3"
+      }
+    },
+    {
+      "ID": "Q005234",
+      "answer": "法相宗",
+      "before": "ほうしょうしゅう",
+      "after": "ほっそうしゅう",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E6%B3%95%E7%9B%B8%E5%AE%97-133529",
+        "locator": "見出し「法相宗 （読み）ホッソウシュウ」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "a6f774dabae79a6ef2b8c9a071a4dc691baa7b6669aecd8363e134e1bd2ccddc"
+      }
+    },
+    {
+      "ID": "Q005244",
+      "answer": "中小企業等協同組合",
+      "before": "ちゅうしょうきぎょうなどきょうどうくみあい",
+      "after": "ちゅうしょうきぎょうとうきょうどうくみあい",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E4%B8%AD%E5%B0%8F%E4%BC%81%E6%A5%AD%E7%AD%89%E5%8D%94%E5%90%8C%E7%B5%84%E5%90%88-567537",
+        "locator": "見出し「中小企業等協同組合 （読み）チュウショウキギョウトウキョウドウクミアイ」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "d9a82bfb930f76731829017017d416a5ca5090a132622e3cf05d90eb45f989de"
+      }
+    },
+    {
+      "ID": "Q005245",
+      "answer": "中小企業等協同組合",
+      "before": "ちゅうしょうきぎょうなどきょうどうくみあい",
+      "after": "ちゅうしょうきぎょうとうきょうどうくみあい",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E4%B8%AD%E5%B0%8F%E4%BC%81%E6%A5%AD%E7%AD%89%E5%8D%94%E5%90%8C%E7%B5%84%E5%90%88-567537",
+        "locator": "見出し「中小企業等協同組合 （読み）チュウショウキギョウトウキョウドウクミアイ」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "d9a82bfb930f76731829017017d416a5ca5090a132622e3cf05d90eb45f989de"
+      }
+    },
+    {
+      "ID": "Q005282",
+      "answer": "万暦版大蔵経",
+      "before": "ばんれきはんおおくらけい",
+      "after": "まんれきばんだいぞうきょう",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E4%B8%87%E6%9A%A6%E7%89%88%E5%A4%A7%E8%94%B5%E7%B5%8C-1421608",
+        "locator": "見出し「万暦版大蔵経 （読み）まんれきばんだいぞうきょう」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "01934de54dc84c06411f912caf9586caea6214bfc848890d979087d4d9d332e4"
+      }
+    },
+    {
+      "ID": "Q005286",
+      "answer": "大正新脩大蔵経",
+      "before": "たいしょうしんしゅうおおくらけい",
+      "after": "たいしょうしんしゅうだいぞうきょう",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E5%A4%A7%E6%AD%A3%E6%96%B0%E8%84%A9%E5%A4%A7%E8%94%B5%E7%B5%8C-3182718",
+        "locator": "見出し「大正新脩大蔵経 （読み）たいしょうしんしゅうだいぞうきょう」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "ff007ceb8aa04c07fabeb797785fe5d493a1d95e9ce1021eb62e637835df3324"
+      }
+    },
+    {
+      "ID": "Q005291",
+      "answer": "大蔵経",
+      "before": "おおくらけい",
+      "after": "だいぞうきょう",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E5%A4%A7%E8%94%B5%E7%B5%8C-91569",
+        "locator": "見出し「大蔵経 （読み）ダイゾウキョウ」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "26cc3839bf4964e42808054f722117ab1e0710f1e1c589d4cea2374a2f509223"
+      }
+    },
+    {
+      "ID": "Q005373",
+      "answer": "硝酸塩",
+      "before": "しょうさんしお",
+      "after": "しょうさんえん",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E7%A1%9D%E9%85%B8%E5%A1%A9-79238",
+        "locator": "見出し「硝酸塩 （読み）ショウサンエン （その他表記）nitrate」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "aecf558b1b724fb31cb23a48441a4088b388471331ce8f6524e22d3508394aa0"
+      }
+    },
+    {
+      "ID": "Q005374",
+      "answer": "硝酸塩",
+      "before": "しょうさんしお",
+      "after": "しょうさんえん",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E7%A1%9D%E9%85%B8%E5%A1%A9-79238",
+        "locator": "見出し「硝酸塩 （読み）ショウサンエン （その他表記）nitrate」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "aecf558b1b724fb31cb23a48441a4088b388471331ce8f6524e22d3508394aa0"
+      }
+    },
+    {
+      "ID": "Q005387",
+      "answer": "公田官物率法",
+      "before": "こうでんかんもつりっぽう",
+      "after": "こうでんかんもつりつほう",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E5%85%AC%E7%94%B0%E5%AE%98%E7%89%A9%E7%8E%87%E6%B3%95-1314913",
+        "locator": "見出し「公田官物率法 （読み）こうでんかんもつりつほう」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "7cacdafb69eff91d6a481e89f61b37161ed3dd4299fa22ac4af1e59ef830ee9e"
+      }
+    },
+    {
+      "ID": "Q005394",
+      "answer": "越後国",
+      "before": "えちごくに",
+      "after": "えちごのくに",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E8%B6%8A%E5%BE%8C%E5%9B%BD-36708",
+        "locator": "見出し「越後国 （読み）エチゴノクニ」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "780077696fe43819c3efde688b86229596ca40a30167eb857bc41bebc4c926b2"
+      }
+    },
+    {
+      "ID": "Q005395",
+      "answer": "越後国",
+      "before": "えちごくに",
+      "after": "えちごのくに",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E8%B6%8A%E5%BE%8C%E5%9B%BD-36708",
+        "locator": "見出し「越後国 （読み）エチゴノクニ」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "780077696fe43819c3efde688b86229596ca40a30167eb857bc41bebc4c926b2"
+      }
+    },
+    {
+      "ID": "Q005397",
+      "answer": "越後国",
+      "before": "えちごくに",
+      "after": "えちごのくに",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E8%B6%8A%E5%BE%8C%E5%9B%BD-36708",
+        "locator": "見出し「越後国 （読み）エチゴノクニ」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "780077696fe43819c3efde688b86229596ca40a30167eb857bc41bebc4c926b2"
+      }
+    },
+    {
+      "ID": "Q005398",
+      "answer": "越後国",
+      "before": "えちごくに",
+      "after": "えちごのくに",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E8%B6%8A%E5%BE%8C%E5%9B%BD-36708",
+        "locator": "見出し「越後国 （読み）エチゴノクニ」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "780077696fe43819c3efde688b86229596ca40a30167eb857bc41bebc4c926b2"
+      }
+    },
+    {
+      "ID": "Q005399",
+      "answer": "磐舟柵",
+      "before": "いわふねさく",
+      "after": "いわふねのさく",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E7%A3%90%E8%88%9F%E6%9F%B5-32726",
+        "locator": "見出し「磐舟柵 （読み）イワフネノサク」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "31b91f10046ce7ab5b15a847912b68670e2857bcc25b4a51265380db8d3c3ed6"
+      }
+    },
+    {
+      "ID": "Q005400",
+      "answer": "越後国",
+      "before": "えちごくに",
+      "after": "えちごのくに",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E8%B6%8A%E5%BE%8C%E5%9B%BD-36708",
+        "locator": "見出し「越後国 （読み）エチゴノクニ」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "780077696fe43819c3efde688b86229596ca40a30167eb857bc41bebc4c926b2"
+      }
+    },
+    {
+      "ID": "Q005441",
+      "answer": "募集型企画旅行",
+      "before": "ぼしゅうかたきかくりょこう",
+      "after": "ぼしゅうがたきかくりょこう",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E5%8B%9F%E9%9B%86%E5%9E%8B%E4%BC%81%E7%94%BB%E6%97%85%E8%A1%8C-1813887",
+        "locator": "見出し「募集型企画旅行 （読み）ボシュウガタキカクリョコウ」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "9c64746b65bbeebd0b9ef48666b8fae95975355609882b3fdb3158e271ddeda2"
+      }
+    },
+    {
+      "ID": "Q005485",
+      "answer": "あだ名",
+      "before": "あだめい",
+      "after": "あだな",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E3%81%82%E3%81%A0%E5%90%8D-25794",
+        "locator": "見出し「あだ名 （読み）あだな （その他表記）nickname」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "8fe8316ca98d2bc17fdfb9698c3f62d3c986c166188a33e11366d245a840724d"
+      }
+    },
+    {
+      "ID": "Q005557",
+      "answer": "菅義偉",
+      "before": "かんよしひで",
+      "after": "すがよしひで",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E8%8F%85%E7%BE%A9%E5%81%89-1123425",
+        "locator": "見出し「菅義偉 （読み）スガヨシヒデ」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "ef33de6b220108cbb5c1e229299176a9ca43edea07e87515ae02d5fde86a2502"
+      }
+    },
+    {
+      "ID": "Q005596",
+      "answer": "預言者",
+      "before": "よげんもの",
+      "after": "よげんしゃ",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E9%A0%90%E8%A8%80%E8%80%85-146003",
+        "locator": "見出し「預言者 （読み）ヨゲンシャ （その他表記）prophet」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "6faa484984d69a932f722b887b27a5aa37c2d8c1d8bb6a6382bd5ef80b4cbb50"
+      }
+    },
+    {
+      "ID": "Q005902",
+      "answer": "東京大学史料編纂所",
+      "before": "とうきょうだいがくしりょうへんさんところ",
+      "after": "とうきょうだいがくしりょうへんさんじょ",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E6%9D%B1%E4%BA%AC%E5%A4%A7%E5%AD%A6%E5%8F%B2%E6%96%99%E7%B7%A8%E7%BA%82%E6%89%80-854927",
+        "locator": "見出し「東京大学史料編纂所 （読み）とうきょうだいがくしりょうへんさんじょ」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "27b4f02db061c6169e4621bdb01267506d42c09941992d5651ca562a28fe9973"
+      }
+    },
+    {
+      "ID": "Q005903",
+      "answer": "東京大学史料編纂所",
+      "before": "とうきょうだいがくしりょうへんさんところ",
+      "after": "とうきょうだいがくしりょうへんさんじょ",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E6%9D%B1%E4%BA%AC%E5%A4%A7%E5%AD%A6%E5%8F%B2%E6%96%99%E7%B7%A8%E7%BA%82%E6%89%80-854927",
+        "locator": "見出し「東京大学史料編纂所 （読み）とうきょうだいがくしりょうへんさんじょ」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "27b4f02db061c6169e4621bdb01267506d42c09941992d5651ca562a28fe9973"
+      }
+    },
+    {
+      "ID": "Q005930",
+      "answer": "土井たか子",
+      "before": "つちいたかこ",
+      "after": "どいたかこ",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E5%9C%9F%E4%BA%95%E3%81%9F%E3%81%8B%E5%AD%90-102930",
+        "locator": "見出し「土井たか子 （読み）どいたかこ」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "27f849342a964da6ab45bf68bf37ef62a8f22958203b80affe710928b8921309"
+      }
+    },
+    {
+      "ID": "Q006010",
+      "answer": "宮沢俊義",
+      "before": "みやざわしゅんぎ",
+      "after": "みやざわとしよし",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E5%AE%AE%E6%B2%A2%E4%BF%8A%E7%BE%A9-139570",
+        "locator": "見出し「宮沢俊義 （読み）ミヤザワトシヨシ」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "245454ea0fe9ba8b290429d7866dbf406cbdc61a094e47c80f0727d0f54750af"
+      }
+    },
+    {
+      "ID": "Q006194",
+      "answer": "伏見城",
+      "before": "ふしみしろ",
+      "after": "ふしみじょう",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E4%BC%8F%E8%A6%8B%E5%9F%8E-124499",
+        "locator": "見出し「伏見城 （読み）フシミジョウ」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "6179e9dd457d337a7fcdc260a73f0baee7d48ec660276bb5d5bc60e9f186ade4"
+      }
+    },
+    {
+      "ID": "Q006248",
+      "answer": "共観福音書",
+      "before": "ともかんぷくおとかき",
+      "after": "きょうかんふくいんしょ",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E5%85%B1%E8%A6%B3%E7%A6%8F%E9%9F%B3%E6%9B%B8-52530",
+        "locator": "見出し「共観福音書 （読み）キョウカンフクインショ」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "7914e4a3759a56f91eebc540da5d258595b9093a86ce1c82b206dc8f82bd9ed0"
+      }
+    },
+    {
+      "ID": "Q006548",
+      "answer": "武器輸出三原則",
+      "before": "ぶきゆしゅつみはらのり",
+      "after": "ぶきゆしゅつさんげんそく",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E6%AD%A6%E5%99%A8%E8%BC%B8%E5%87%BA%E4%B8%89%E5%8E%9F%E5%89%87-169382",
+        "locator": "見出し「武器輸出三原則 （読み）ブキユシュツサンゲンソク」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "d5d3ecd7be6cb6306b76544f14d94f5a1f543c89094d747a399f14c51098de86"
+      }
+    },
+    {
+      "ID": "Q006603",
+      "answer": "探検家",
+      "before": "たんけんいえ",
+      "after": "たんけんか",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E6%8E%A2%E6%A4%9C%E5%AE%B6-2060941",
+        "locator": "見出し「探検家 （読み）たんけんか」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "84ec9979dd5e9ae7953c6aa2883e6c1720afde633ecb43d35f3745a00a62a76b"
+      }
+    },
+    {
+      "ID": "Q006604",
+      "answer": "探検家",
+      "before": "たんけんいえ",
+      "after": "たんけんか",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E6%8E%A2%E6%A4%9C%E5%AE%B6-2060941",
+        "locator": "見出し「探検家 （読み）たんけんか」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "84ec9979dd5e9ae7953c6aa2883e6c1720afde633ecb43d35f3745a00a62a76b"
+      }
+    },
+    {
+      "ID": "Q006605",
+      "answer": "探検家",
+      "before": "たんけんいえ",
+      "after": "たんけんか",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E6%8E%A2%E6%A4%9C%E5%AE%B6-2060941",
+        "locator": "見出し「探検家 （読み）たんけんか」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "84ec9979dd5e9ae7953c6aa2883e6c1720afde633ecb43d35f3745a00a62a76b"
+      }
+    },
+    {
+      "ID": "Q006608",
+      "answer": "鹿児島市",
+      "before": "かこしまし",
+      "after": "かごしまし",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E9%B9%BF%E5%85%90%E5%B3%B6%E5%B8%82-44027",
+        "locator": "見出し「鹿児島市 （読み）カゴシマシ」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "1724ea5578cb5e341cbee6444dc86233ee5a5a5da62d34f7c5955971323b4f16"
+      }
+    },
+    {
+      "ID": "Q006612",
+      "answer": "鹿児島市",
+      "before": "かこしまし",
+      "after": "かごしまし",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E9%B9%BF%E5%85%90%E5%B3%B6%E5%B8%82-44027",
+        "locator": "見出し「鹿児島市 （読み）カゴシマシ」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "1724ea5578cb5e341cbee6444dc86233ee5a5a5da62d34f7c5955971323b4f16"
+      }
+    },
+    {
+      "ID": "Q006681",
+      "answer": "土砂崩れ",
+      "before": "どしゃくづれ",
+      "after": "どしゃくずれ",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E5%9C%9F%E7%A0%82%E5%B4%A9%E3%82%8C-583529",
+        "locator": "見出し「土砂崩れ （読み）ドシャクズレ」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "d93228dc8de8d01dd6f212156466e43c69608ef5475c8453f6a67b6baf1aac14"
+      }
+    },
+    {
+      "ID": "Q006745",
+      "answer": "盧溝橋事件",
+      "before": "ろこうはしじけん",
+      "after": "ろこうきょうじけん",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E7%9B%A7%E6%BA%9D%E6%A9%8B%E4%BA%8B%E4%BB%B6-152722",
+        "locator": "見出し「盧溝橋事件 （読み）ロコウキョウジケン」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "8c57217b4f4a420d4152c5f26ee960e3b54517465b4553c770af57147c5aabee"
+      }
+    },
+    {
+      "ID": "Q006935",
+      "answer": "公共職業安定所",
+      "before": "こうきょうしょくぎょうあんていところ",
+      "after": "こうきょうしょくぎょうあんていじょ",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E5%85%AC%E5%85%B1%E8%81%B7%E6%A5%AD%E5%AE%89%E5%AE%9A%E6%89%80-61771",
+        "locator": "見出し「公共職業安定所 （読み）コウキョウショクギョウアンテイジョ」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "8a801266978aac2561fa2e58335cd5180fb5dff91f886f63802c099cac7795f0"
+      }
+    },
+    {
+      "ID": "Q006936",
+      "answer": "公共職業安定所",
+      "before": "こうきょうしょくぎょうあんていところ",
+      "after": "こうきょうしょくぎょうあんていじょ",
+      "previous_version": 1,
+      "version": 2,
+      "status_preserved": "candidate",
+      "evidence": {
+        "source": "https://kotobank.jp/word/%E5%85%AC%E5%85%B1%E8%81%B7%E6%A5%AD%E5%AE%89%E5%AE%9A%E6%89%80-61771",
+        "locator": "見出し「公共職業安定所 （読み）コウキョウショクギョウアンテイジョ」",
+        "checked_on": "2026-11-03",
+        "source_sha256": "8a801266978aac2561fa2e58335cd5180fb5dff91f886f63802c099cac7795f0"
+      }
+    }
+  ]
+}

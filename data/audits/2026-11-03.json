@@ -487,5 +487,17 @@
       },
       "note": "Source lineage and answer spans match the pinned/cached datasets; this does not verify the underlying facts, standalone quiz quality, or pronunciation. Pykakasi output matched all 3,492 imported readings before manual review, but spot checks found incorrect readings."
     }
+  },
+  "batch_019": {
+    "reading_changes": 86,
+    "record": "docs/batch-019.md",
+    "audit": "data/audits/batch-019-reading-format.json",
+    "scope": "Canonical reading only; fact verification states, classification, difficulty and tags preserved."
+  },
+  "batch_020": {
+    "reading_changes": 171,
+    "record": "docs/batch-020.md",
+    "audit": "data/audits/batch-020-reading-review.json",
+    "scope": "Canonical reading only; fact verification states, classification, difficulty and tags preserved."
   }
 }
