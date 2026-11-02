@@ -67,6 +67,7 @@ class QuizTest(unittest.TestCase):
         for row in rows:
             row['難易度'] = int(row['難易度'])
             row['答えjson'] = json.loads(row['答えjson'])
+            row['タグ'] = json.loads(row['タグ'])
         self.assertEqual(rows, [q for q in questions if q['ID'] in candidate_ids])
 
     def test_approval_requires_evidence(self):
@@ -120,6 +121,22 @@ class QuizTest(unittest.TestCase):
                     self.assertRegex(source['repository_commit'], r'^[a-f0-9]{40}$')
                     self.assertIn(source['repository_commit'], source['url'])
 
+    def test_tags_are_reviewed_separately_from_genre(self):
+        questions = quiz.load(ROOT / 'data/questions.jsonl')
+        reviews = {r['ID']: r for r in quiz.load(ROOT / 'data/reviews.jsonl')}
+        reviewed = [q for q in questions if reviews[q['ID']]['tag_status'] == 'reviewed']
+        pending = [q for q in questions if reviews[q['ID']]['tag_status'] == 'pending']
+        self.assertEqual(len(reviewed), 25)
+        self.assertTrue(all(q['タグ'] for q in reviewed))
+        self.assertTrue(all(not q['タグ'] for q in pending))
+        self.assertEqual(len(pending), 3483)
+        for question in reviewed:
+            self.assertEqual(len(question['タグ']), 2, question['ID'])
+            self.assertIn(question['タグ'][0], {
+                '人物', '作品', '地名', '組織', '用語', '生物', '食品', '料理',
+                '商品', '病名', '制度', '文書', '期限', '記号', '番号',
+            }, question['ID'])
+
     def test_all_and_verified_csv_match_master(self):
         questions = quiz.load(ROOT / 'data/questions.jsonl')
         reviews = quiz.load(ROOT / 'data/reviews.jsonl')
@@ -130,6 +147,7 @@ class QuizTest(unittest.TestCase):
             for row in rows:
                 row['難易度'] = int(row['難易度'])
                 row['答えjson'] = json.loads(row['答えjson'])
+                row['タグ'] = json.loads(row['タグ'])
             expected = [q for q in questions if status == 'all' or by_id[q['ID']]['status'] == status]
             self.assertEqual(rows, expected)
 

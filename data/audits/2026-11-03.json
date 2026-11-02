@@ -41,5 +41,12 @@
     {"ID": "Q003507", "genre": "社会", "subgenre": "法律", "difficulty": 2, "answer": "最高裁判所", "reading": "さいこうさいばんしょ", "source": "https://www.ndl.go.jp/constitution/etc/j01.html"},
     {"ID": "Q003508", "genre": "雑学", "subgenre": "郵便", "difficulty": 1, "answer": "郵便番号", "reading": "ゆうびんばんごう", "source": "https://www.post.japanpost.jp/service/search/zipcode/"}
   ],
+  "tagging": {
+    "schema_version": 1,
+    "reviewed": 25,
+    "pending": 3483,
+    "record": "docs/tags-2026-11-03.md",
+    "policy": "Assign two content-specific tags only after reading the item; leave all other tags empty and pending."
+  },
   "verification_scope": "Each listed source's content was read and matched to the question, explanation, answer, reading and classification. Q000435, Q000487, Q000490, Q000480, Q000466, Q000464, Q000522, Q000535, Q000496, Q000498, Q000526, Q000532 and Q000556 were existing candidates updated and moved to verified after direct source review. Q000505, Q000508, Q000511 and Q000570 were already verified and were re-reviewed against additional authoritative sources. Difficulty remains provisional pending playtesting. Public approval remains a separate human review."
 }

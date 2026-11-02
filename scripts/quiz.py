@@ -9,7 +9,7 @@ import re
 import unicodedata
 
 ROOT = Path(__file__).resolve().parents[1]
-FIELDS = ('ID', 'ジャンル', 'サブジャンル', '難易度', '問', '解説', '答えjson')
+FIELDS = ('ID', 'ジャンル', 'サブジャンル', '難易度', '問', '解説', '答えjson', 'タグ')
 GENRES = ('アニメ＆ゲーム', '文系', '理系', '生活', '雑学', 'エンタメ＆スポーツ', '社会')
 STATES = {'candidate', 'verified', 'approved', 'held', 'retired'}
 
@@ -73,12 +73,23 @@ def validate(questions, reviews):
             if main in answers_seen:
                 warnings.append(f'{qid}: 正解対象が{answers_seen[main]}と共通（要確認）')
             answers_seen[main] = qid
+        tags = q.get('タグ')
+        if not isinstance(tags, list) or any(not isinstance(tag, str) or not tag.strip() for tag in tags):
+            errors.append(f'{qid}: タグは空でない文字列の配列が必要')
+        elif len({normalize(tag) for tag in tags}) != len(tags):
+            errors.append(f'{qid}: タグ重複')
         r = by_id.get(qid)
         if r is None:
             errors.append(f'{qid}: 審査記録なし')
             continue
         if r.get('status') not in STATES:
             errors.append(f'{qid}: 審査状態不正')
+        if r.get('tag_status') not in {'pending', 'reviewed'}:
+            errors.append(f'{qid}: タグ審査状態不正')
+        elif r['tag_status'] == 'reviewed' and not tags:
+            errors.append(f'{qid}: タグ審査済みだがタグなし')
+        elif r['tag_status'] == 'pending' and tags:
+            errors.append(f'{qid}: 未審査タグが登録されている')
         if type(r.get('version')) is not int or r['version'] < 1:
             errors.append(f'{qid}: 版番号不正')
         if isinstance(answers, list):
@@ -126,7 +137,9 @@ def export_csv(questions, reviews, status, output):
         writer = csv.DictWriter(stream, fieldnames=FIELDS, lineterminator='\n')
         writer.writeheader()
         for q in rows:
-            writer.writerow({**q, '答えjson': json.dumps(q['答えjson'], ensure_ascii=False)})
+            writer.writerow({**q,
+                             '答えjson': json.dumps(q['答えjson'], ensure_ascii=False),
+                             'タグ': json.dumps(q['タグ'], ensure_ascii=False)})
     return len(rows)
 
 
@@ -151,6 +164,8 @@ def main():
     if args.command == 'validate':
         print(f'{len(questions)}問 / 構造検証エラー0件（事実確認の合格ではありません）')
         print('状態:', dict(collections.Counter(r['status'] for r in reviews)))
+        tag_counts = collections.Counter(r['tag_status'] for r in reviews)
+        print(f"タグ: {tag_counts['reviewed']}問確認済み / {tag_counts['pending']}問未確認")
         counts = collections.Counter((q['ジャンル'], q['難易度']) for q in questions)
         for genre in GENRES:
             print(genre, [counts[genre, n] for n in range(1, 6)])
