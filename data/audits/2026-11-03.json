@@ -8,8 +8,8 @@
     "approved": 0
   },
   "statuses": {
-    "verified": 3267,
-    "candidate": 3698,
+    "verified": 3277,
+    "candidate": 3688,
     "approved": 0,
     "held": 35,
     "retired": 0
@@ -335,8 +335,8 @@
   ],
   "tagging": {
     "schema_version": 1,
-    "reviewed": 2675,
-    "pending": 4325,
+    "reviewed": 2685,
+    "pending": 4315,
     "record": "docs/tags-2026-11-03.md",
     "policy": "Assign two content-specific tags only after reading the item; leave all other tags empty and pending."
   },
@@ -644,5 +644,12 @@
     "held_duplicates": 0,
     "audit": "data/audits/batch-040.json",
     "record": "docs/batch-040.md"
+  },
+  "batch_041": {
+    "reviewed": 10,
+    "newly_verified": 10,
+    "held_duplicates": 0,
+    "audit": "data/audits/batch-041.json",
+    "record": "docs/batch-041.md"
   }
 }

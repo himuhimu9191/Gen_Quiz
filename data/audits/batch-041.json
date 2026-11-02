@@ -1,0 +1,27 @@
+{
+  "checked_on": "2026-11-03",
+  "batch": "041",
+  "method": "JGLUE fixed-commit alignment with whitespace normalization",
+  "reviewed": 10,
+  "newly_verified": 10,
+  "held_duplicates": 0,
+  "changes": [],
+  "statuses": {
+    "verified": 3277,
+    "candidate": 3688,
+    "held": 35
+  },
+  "warnings": 1163,
+  "processed": [
+    "Q004829",
+    "Q005165",
+    "Q005412",
+    "Q005480",
+    "Q005709",
+    "Q006128",
+    "Q006398",
+    "Q006647",
+    "Q006729",
+    "Q006904"
+  ]
+}
