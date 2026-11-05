@@ -57,8 +57,8 @@ class QuizTest(unittest.TestCase):
     def test_batch_016_target_and_statuses(self):
         questions = quiz.load(ROOT / 'data/questions.jsonl')
         reviews = quiz.load(ROOT / 'data/reviews.jsonl')
-        self.assertEqual(len(questions), 7000)
-        added = [q for q in questions if q['ID'] >= 'Q003509']
+        self.assertGreaterEqual(len(questions), 7000)
+        added = [q for q in questions if 'Q003509' <= q['ID'] <= 'Q007000']
         self.assertEqual(len(added), 3492)
         self.assertEqual(added[0]['ID'], 'Q003509')
         self.assertEqual(added[-1]['ID'], 'Q007000')
@@ -76,6 +76,27 @@ class QuizTest(unittest.TestCase):
                 self.assertEqual(by_id[q['ID']]['reading_status'], 'reviewed', q['ID'])
                 self.assertEqual(by_id[q['ID']]['classification_status'], 'reviewed', q['ID'])
                 self.assertEqual(by_id[q['ID']]['tag_status'], 'reviewed', q['ID'])
+
+    def test_batch_051_candidates_are_tracked_and_unreviewed(self):
+        questions = quiz.load(ROOT / 'data/questions.jsonl')
+        reviews = quiz.load(ROOT / 'data/reviews.jsonl')
+        batch = [r for r in reviews if r.get('batch') == '051']
+        self.assertEqual(len(batch), 3500)
+        self.assertTrue(all('Q007001' <= r['ID'] <= 'Q010500' for r in batch))
+        self.assertTrue(all(r['status'] == 'candidate' for r in batch))
+        self.assertTrue(all(r['claims'] == [] and r['tag_status'] == 'pending' for r in batch))
+        self.assertTrue(all(r['reading_status'] == 'needs_review' for r in batch))
+        self.assertTrue(all(r['classification_status'] == 'provisional' for r in batch))
+        by_id = {q['ID']: q for q in questions}
+        self.assertTrue(all(by_id[r['ID']]['タグ'] == [] for r in batch))
+        self.assertTrue(all(len(by_id[r['ID']]['答えjson']) == 2 for r in batch))
+        self.assertTrue(all(quiz.normalize(by_id[r['ID']]['答えjson'][0]) not in quiz.normalize(by_id[r['ID']]['問']) for r in batch))
+        self.assertTrue(all(r['import_provenance']['license'] == 'CC-BY-SA-3.0' for r in batch))
+        source_ids = [r['import_provenance']['source_id'] for r in batch]
+        self.assertEqual(len(source_ids), len(set(source_ids)))
+        manifest = json.loads((ROOT / 'data/imports/batch-051-manifest.json').read_text(encoding='utf-8'))
+        self.assertEqual(manifest['selected'], 3500)
+        self.assertEqual(manifest['statuses']['candidate'], 3500)
 
     def test_no_answer_given_in_question(self):
         for q in quiz.load(ROOT / 'data/questions.jsonl'):

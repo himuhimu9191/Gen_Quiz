@@ -40,3 +40,11 @@
 改変・再配布時は各元データのライセンス、作成者、出典、変更点を維持してください。AI王の配布元は[ライセンス謝辞](https://sites.google.com/view/project-aio/dataset)、JQACは[配布ページ](https://taniokah.github.io/jqac/)、JGLUEは[公式リポジトリの説明・ライセンス](https://github.com/yahoojapan/JGLUE/blob/6f071c09316baae89c3d083a90985b4b1cb9968c/README.md)を参照してください。
 
 取り込み時は設問長、同一設問、答え漏れ、仮のひらがな読みを機械処理しました。バッチ040〜048で読み・分類・難易度・タグ・重複を再確認しました。難易度は試遊前の暫定値です。対応表は [batch-016.jsonl](../data/imports/batch-016.jsonl)、件数・取得版・ハッシュは [manifest](../data/imports/batch-016-manifest.json) に記録しています。
+
+## バッチ051（Q007001〜Q010500）
+
+2026-11-05にJaQuADから3,500問を候補として追加しました。元データは[Skelter Labsの公式リポジトリ](https://github.com/SkelterLabsInc/JaQuAD/tree/23f5d72cc273c49b35e2d9efe0f51757aa1770bd)で公開され、ByungHoon So、Kyuhong Byun、Kyungwon Kang、Seongjin ChoとJaQuADアノテーターによる日本語QA、日本語Wikipedia本文を含みます。元データのライセンスは **CC BY-SA 3.0 Unported** です。元の問題文・回答・作成者の帰属を対応表に残し、追加候補の配布には同じBY-SA条件を適用します。[ライセンス本文](https://creativecommons.org/licenses/by-sa/3.0/legalcode.ja)。
+
+短い設問には記事名の文脈を加え、代表解答から「シリーズ」など設問が求めない一般分類語を除き、Pykakasi 2.3.0で初期ひらがな読みを作りました。解説は出典本文を確認するための候補用文に置き換えています。元の設問・答え・回答位置・記事名・コンテキストのハッシュ・QA ID・ファイルハッシュを [batch-051.jsonl](../data/imports/batch-051.jsonl) と [manifest](../data/imports/batch-051-manifest.json) に記録しました。元の全文コンテキストは再配布していません。
+
+これらはすべてcandidateです。回答位置の一致と構造は機械確認しましたが、本文に基づく設問全体の事実照合、読み、許容表記、正解範囲、ジャンル・サブジャンル、難易度、タグ、人による公開承認は未完了です。出題CSVから出典名を省く場合も、クレジットはCSVの `.license` ファイルと本書で維持します。
