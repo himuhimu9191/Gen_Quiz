@@ -1,0 +1,27 @@
+{
+  "checked_on": "2026-11-12",
+  "questions": 10500,
+  "queued": 7615,
+  "priority": {
+    "review": 3094,
+    "high": 4521
+  },
+  "flags": {
+    "weak_early_clue": 2041,
+    "short_answer": 1348,
+    "short_reading": 335,
+    "suspicious_answer_word": 22,
+    "short_prompt": 659,
+    "punctuation": 13,
+    "prompt_ending": 1104,
+    "long_prompt": 5,
+    "unbalanced_brackets": 27,
+    "answer_edit": 312
+  },
+  "candidate_rows": 3500,
+  "policy": "意味のない断片・未使用名称は許容表記に自動追加しない。正式名称、実在する別名、確認済みの表記差のみ人手で登録する。",
+  "files": {
+    "jsonl": "human-review-2026-11-12.jsonl",
+    "csv": "human-review-2026-11-12.csv"
+  }
+}

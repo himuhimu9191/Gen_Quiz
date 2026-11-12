@@ -21,6 +21,11 @@ class QuizTest(unittest.TestCase):
         for response in ['', 'べん', 'ルートヴィヒ', 'ベートーヴェンです']:
             self.assertFalse(quiz.accepts(answers, response))
 
+    def test_non_standalone_prefix_is_not_an_answer(self):
+        answers = ['ドラえもん', 'どらえもん']
+        for response in ['どらえ', 'どら', 'えもん']:
+            self.assertFalse(quiz.accepts(answers, response))
+
     def test_proper_names_require_full_names(self):
         by_id = {q['ID']: q for q in quiz.load(ROOT / 'data/questions.jsonl')}
         cases = [('Q000006', 'マインクラフト', 'マイクラ'),
